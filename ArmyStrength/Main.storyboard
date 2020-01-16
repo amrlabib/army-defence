@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zkm-gO-nZU">
-    <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zkm-gO-nZU">
+    <device id="ipad12_9" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,21 +23,90 @@
             </objects>
             <point key="canvasLocation" x="-2903" y="-598"/>
         </scene>
-        <!--View Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="n05-oq-wnn">
             <objects>
-                <viewController id="mZI-bN-0Af" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="mZI-bN-0Af" customClass="MenuViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9YU-QJ-vFu">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="13W-Yx-x1a">
+                                <rect key="frame" x="552" y="298" width="262" height="429"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0y-6z-OKH">
+                                        <rect key="frame" x="31" y="282" width="200" height="127"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="7H8-4I-NaX">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="100"/>
+                                            </constraint>
+                                            <constraint firstAttribute="height" constant="127" id="dSZ-Va-QVY">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="64"/>
+                                            </constraint>
+                                        </constraints>
+                                        <state key="normal" image="aboutButton.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gT-pG-xa4">
+                                        <rect key="frame" x="31" y="0.0" width="200" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="5D7-DR-Dhb">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="100"/>
+                                            </constraint>
+                                            <constraint firstAttribute="height" constant="128" id="9Zd-fe-T4x">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="100"/>
+                                            </constraint>
+                                        </constraints>
+                                        <state key="normal" image="playButton.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KO7-sk-LeR">
+                                        <rect key="frame" x="31" y="141" width="200" height="127"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="127" id="bzk-h1-1Yp">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="64"/>
+                                            </constraint>
+                                            <constraint firstAttribute="width" constant="200" id="iwD-tw-kFZ">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="100"/>
+                                            </constraint>
+                                        </constraints>
+                                        <state key="normal" image="optionsButton.png"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="KO7-sk-LeR" firstAttribute="centerX" secondItem="13W-Yx-x1a" secondAttribute="centerX" id="3mP-BU-o72"/>
+                                    <constraint firstItem="v0y-6z-OKH" firstAttribute="centerX" secondItem="13W-Yx-x1a" secondAttribute="centerX" id="7HW-mh-Hez"/>
+                                    <constraint firstAttribute="width" constant="262" id="Lcw-4z-13C">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="160"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="409" id="QZz-v9-aFv">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="200"/>
+                                    </constraint>
+                                    <constraint firstAttribute="bottom" secondItem="v0y-6z-OKH" secondAttribute="bottom" id="crv-ZG-yic"/>
+                                    <constraint firstItem="2gT-pG-xa4" firstAttribute="centerX" secondItem="13W-Yx-x1a" secondAttribute="centerX" id="fuP-WW-SPz"/>
+                                    <constraint firstItem="KO7-sk-LeR" firstAttribute="centerY" secondItem="13W-Yx-x1a" secondAttribute="centerY" id="iJu-2b-jhg"/>
+                                    <constraint firstItem="2gT-pG-xa4" firstAttribute="top" secondItem="13W-Yx-x1a" secondAttribute="top" id="xOe-Ja-t4N"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="13W-Yx-x1a" firstAttribute="top" secondItem="BRd-VO-TkA" secondAttribute="top" constant="200" id="BJM-tb-ta6">
+                                <variation key="heightClass=compact-widthClass=compact" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="13W-Yx-x1a" firstAttribute="centerX" secondItem="9YU-QJ-vFu" secondAttribute="centerX" id="fio-6c-SQI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="BRd-VO-TkA"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ptm-Rg-9UY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="okf-YX-na1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1890.0439238653" y="-599.4140625"/>
+            <point key="canvasLocation" x="-1890.2343749999998" y="-600.87847730600288"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="aboutButton.png" width="200" height="127"/>
+        <image name="optionsButton.png" width="200" height="127"/>
+        <image name="playButton.png" width="200" height="128"/>
+    </resources>
 </document>

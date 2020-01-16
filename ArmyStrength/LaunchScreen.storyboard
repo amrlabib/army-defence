@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
             <objects>
-                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="backgroundStoryBoard" id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,7 +39,7 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-plane.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZSy-on-rGo">
-                                <rect key="frame" x="528" y="0.0" width="140" height="150"/>
+                                <rect key="frame" x="558" y="0.0" width="140" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="312" id="hip-8X-SFL">
                                         <variation key="heightClass=compact-widthClass=compact" constant="150"/>
@@ -50,7 +50,7 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-apache.png" translatesAutoresizingMaskIntoConstraints="NO" id="bsp-BM-zka">
-                                <rect key="frame" x="144" y="10" width="120" height="140"/>
+                                <rect key="frame" x="114" y="10" width="120" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="340" id="Qtk-7W-P9Y">
                                         <variation key="heightClass=compact-widthClass=compact" constant="140"/>
@@ -97,7 +97,7 @@
                         <color key="backgroundColor" red="0.14403192811009002" green="0.19106916243654826" blue="0.098210528374667663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bsp-BM-zka" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="67" id="4Vj-DA-gJ0">
-                                <variation key="heightClass=compact-widthClass=compact" constant="100"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="70"/>
                             </constraint>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="bdZ-dx-BfL" secondAttribute="bottom" constant="30" id="8bO-g3-zJJ">
                                 <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
@@ -110,7 +110,7 @@
                                 <variation key="heightClass=compact-widthClass=compact" constant="100"/>
                             </constraint>
                             <constraint firstItem="ZSy-on-rGo" firstAttribute="trailing" secondItem="Bcu-3y-fUS" secondAttribute="trailing" id="Hys-MK-ZnR">
-                                <variation key="heightClass=compact-widthClass=compact" constant="-100"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="-70"/>
                             </constraint>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="6ro-xB-65C" secondAttribute="trailing" constant="50" id="MOp-aB-Kot">
                                 <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
