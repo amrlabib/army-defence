@@ -45,6 +45,9 @@
                                             </constraint>
                                         </constraints>
                                         <state key="normal" image="aboutButton.png"/>
+                                        <connections>
+                                            <segue destination="KqY-PR-VcB" kind="show" id="pet-m1-BRk"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gT-pG-xa4">
                                         <rect key="frame" x="31" y="0.0" width="200" height="128"/>
@@ -87,13 +90,51 @@
                                     <constraint firstItem="2gT-pG-xa4" firstAttribute="top" secondItem="13W-Yx-x1a" secondAttribute="top" id="xOe-Ja-t4N"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ku4-Df-ucv">
+                                <rect key="frame" x="20" y="934" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="wvG-D3-wg2">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="60"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="70" id="xp7-6W-Gdi">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="60"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" image="rateButton.png"/>
+                                <connections>
+                                    <action selector="RateButton:" destination="mZI-bN-0Af" eventType="touchUpInside" id="c6r-Ma-MDt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y92-Yy-Ftc">
+                                <rect key="frame" x="130" y="934" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Q0V-jG-m94">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="60"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="70" id="x0e-zQ-tB1">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="60"/>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" image="buyFullVersionButton.png"/>
+                                <connections>
+                                    <action selector="BuyFullAppButton:" destination="mZI-bN-0Af" eventType="touchUpInside" id="fGu-DZ-j3o"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="BRd-VO-TkA" firstAttribute="bottom" secondItem="Ku4-Df-ucv" secondAttribute="bottom" constant="20" id="3HA-hN-T7L">
+                                <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                            </constraint>
                             <constraint firstItem="13W-Yx-x1a" firstAttribute="top" secondItem="BRd-VO-TkA" secondAttribute="top" constant="200" id="BJM-tb-ta6">
                                 <variation key="heightClass=compact-widthClass=compact" constant="30"/>
                             </constraint>
+                            <constraint firstItem="BRd-VO-TkA" firstAttribute="bottom" secondItem="Y92-Yy-Ftc" secondAttribute="bottom" constant="20" id="Ox5-jG-l4h">
+                                <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="Ku4-Df-ucv" firstAttribute="leading" secondItem="BRd-VO-TkA" secondAttribute="leading" constant="20" id="RnB-lI-NcM"/>
                             <constraint firstItem="13W-Yx-x1a" firstAttribute="centerX" secondItem="9YU-QJ-vFu" secondAttribute="centerX" id="fio-6c-SQI"/>
+                            <constraint firstItem="Y92-Yy-Ftc" firstAttribute="leading" secondItem="Ku4-Df-ucv" secondAttribute="trailing" constant="40" id="giM-N3-3zl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BRd-VO-TkA"/>
                     </view>
@@ -103,10 +144,56 @@
             </objects>
             <point key="canvasLocation" x="-1890.2343749999998" y="-600.87847730600288"/>
         </scene>
+        <!--About View Controller-->
+        <scene sceneID="dfn-Ke-zl6">
+            <objects>
+                <viewController id="KqY-PR-VcB" customClass="AboutViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="co8-8T-CU3">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aboutText.png" translatesAutoresizingMaskIntoConstraints="NO" id="QBq-iK-6Xn">
+                                <rect key="frame" x="323.5" y="246" width="719" height="532"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="532" id="AvV-rT-gH7"/>
+                                    <constraint firstAttribute="width" constant="719" id="MSG-zO-Qeq"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXI-g4-1EJ">
+                                <rect key="frame" x="40" y="40" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="ArE-JB-xyN"/>
+                                    <constraint firstAttribute="height" constant="80" id="Hbd-i2-Ghs"/>
+                                </constraints>
+                                <state key="normal" image="homeButton.png"/>
+                                <connections>
+                                    <action selector="HomeButton:" destination="KqY-PR-VcB" eventType="touchUpInside" id="XkT-WU-Zha"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14509803921568626" green="0.19215686274509802" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jXI-g4-1EJ" firstAttribute="leading" secondItem="nPf-w9-5eW" secondAttribute="leading" constant="40" id="2LS-qQ-aob"/>
+                            <constraint firstItem="QBq-iK-6Xn" firstAttribute="centerX" secondItem="co8-8T-CU3" secondAttribute="centerX" id="7Cx-rA-L1D"/>
+                            <constraint firstItem="jXI-g4-1EJ" firstAttribute="top" secondItem="nPf-w9-5eW" secondAttribute="top" constant="40" id="Fad-2c-vx5"/>
+                            <constraint firstItem="QBq-iK-6Xn" firstAttribute="centerY" secondItem="co8-8T-CU3" secondAttribute="centerY" id="PTC-Ey-QHz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nPf-w9-5eW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="if0-T5-Lvk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aPC-mi-KWq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-982.13762811127367" y="-610.546875"/>
+        </scene>
     </scenes>
     <resources>
         <image name="aboutButton.png" width="200" height="127"/>
+        <image name="aboutText.png" width="900" height="900"/>
+        <image name="buyFullVersionButton.png" width="150" height="150"/>
+        <image name="homeButton.png" width="150" height="150"/>
         <image name="optionsButton.png" width="200" height="127"/>
         <image name="playButton.png" width="200" height="128"/>
+        <image name="rateButton.png" width="150" height="150"/>
     </resources>
 </document>

@@ -10,6 +10,7 @@
 		5E00D56617C389430049A720 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E00D56517C389430049A720 /* OpenAL.framework */; };
 		5E00D56817C39F930049A720 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E00D56717C39F930049A720 /* AudioToolbox.framework */; };
 		5E2A042323D0F6A800AE988C /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A042223D0F6A800AE988C /* MenuViewController.m */; };
+		5E2A042623D113FC00AE988C /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A042523D113FC00AE988C /* AboutViewController.m */; };
 		5E3D33E2180BF0F800640BE1 /* savedText.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D33E1180BF0F800640BE1 /* savedText.m */; };
 		5E4271F6180453C500688B65 /* levelAttr.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4271F5180453C500688B65 /* levelAttr.m */; };
 		5E449DD718181D9500417BF0 /* BombView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E449DD618181D9500417BF0 /* BombView.m */; };
@@ -228,6 +229,8 @@
 		5E00D56717C39F930049A720 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		5E2A042123D0F6A800AE988C /* MenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		5E2A042223D0F6A800AE988C /* MenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		5E2A042423D113FC00AE988C /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		5E2A042523D113FC00AE988C /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		5E3D33E0180BF0F800640BE1 /* savedText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = savedText.h; sourceTree = "<group>"; };
 		5E3D33E1180BF0F800640BE1 /* savedText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = savedText.m; sourceTree = "<group>"; };
 		5E4271F4180453C500688B65 /* levelAttr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = levelAttr.h; sourceTree = "<group>"; };
@@ -744,6 +747,8 @@
 				5EB3622C23C4EC4300D13482 /* Main.storyboard */,
 				5E2A042123D0F6A800AE988C /* MenuViewController.h */,
 				5E2A042223D0F6A800AE988C /* MenuViewController.m */,
+				5E2A042423D113FC00AE988C /* AboutViewController.h */,
+				5E2A042523D113FC00AE988C /* AboutViewController.m */,
 			);
 			path = ArmyStrength;
 			sourceTree = "<group>";
@@ -1138,6 +1143,7 @@
 				5E82F49917AB0FC900D87C8C /* DrawableObject.m in Sources */,
 				5E82F49C17AB179300D87C8C /* Shooter.m in Sources */,
 				5ECCE70C17AC0A4800CAF594 /* Tank.m in Sources */,
+				5E2A042623D113FC00AE988C /* AboutViewController.m in Sources */,
 				5ECCE71117AC644900CAF594 /* gameBoard.m in Sources */,
 				5E5D835E17B143D800A2FAD3 /* IJIndex.m in Sources */,
 				5E2A042323D0F6A800AE988C /* MenuViewController.m in Sources */,
