@@ -17,13 +17,9 @@
 @implementation ViewController
 
 
-
-
 -(void) mainFunction
 {
     [self adjustScreenResolution];
-    
-    mainMenuObject = [[mainMenu alloc] init: self.view : currentWindowBounds];
 }
 -(void) adjustScreenResolution
 {

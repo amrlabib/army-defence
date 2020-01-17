@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "DrawableObject.h"
-
-#import "aboutCanvas.h"
-#import "optionsCancas.h"
-#import "levelsCanvas.h"
 #import "soundEffectsHandler.h"
 #import "savedText.h"
 #import "bullet.h"

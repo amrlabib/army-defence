@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "menuCanvasAttr.h"
 #import "savedText.h"
 #import "soundEffectsHandler.h"
 

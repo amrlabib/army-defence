@@ -8,7 +8,6 @@
 
 #import "gameObject.h"
 
-#import "levelsCanvas.h"
 
 @implementation gameObject
 

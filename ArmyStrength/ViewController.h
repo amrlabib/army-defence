@@ -7,16 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "mainMenu.h"
 #import <AudioToolbox/AudioToolbox.h>
 
 
 @interface ViewController : UIViewController
 {
     CGSize currentWindowBounds;
-    mainMenu *mainMenuObject;
-    //levelsCanvas *levelsObject;
-    
 }
 
 -(void) mainFunction;
