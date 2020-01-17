@@ -56,10 +56,13 @@
                                                 <variation key="heightClass=compact-widthClass=compact" constant="100"/>
                                             </constraint>
                                             <constraint firstAttribute="height" constant="128" id="9Zd-fe-T4x">
-                                                <variation key="heightClass=compact-widthClass=compact" constant="100"/>
+                                                <variation key="heightClass=compact-widthClass=compact" constant="64"/>
                                             </constraint>
                                         </constraints>
                                         <state key="normal" image="playButton.png"/>
+                                        <connections>
+                                            <segue destination="6wp-Ce-ZEX" kind="show" id="LV4-nG-Owj"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KO7-sk-LeR">
                                         <rect key="frame" x="31" y="141" width="200" height="127"/>
@@ -94,10 +97,10 @@
                                 <rect key="frame" x="20" y="934" width="70" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="wvG-D3-wg2">
-                                        <variation key="heightClass=compact-widthClass=compact" constant="60"/>
+                                        <variation key="heightClass=compact-widthClass=compact" constant="35"/>
                                     </constraint>
                                     <constraint firstAttribute="height" constant="70" id="xp7-6W-Gdi">
-                                        <variation key="heightClass=compact-widthClass=compact" constant="60"/>
+                                        <variation key="heightClass=compact-widthClass=compact" constant="35"/>
                                     </constraint>
                                 </constraints>
                                 <state key="normal" image="rateButton.png"/>
@@ -109,10 +112,10 @@
                                 <rect key="frame" x="130" y="934" width="70" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="Q0V-jG-m94">
-                                        <variation key="heightClass=compact-widthClass=compact" constant="60"/>
+                                        <variation key="heightClass=compact-widthClass=compact" constant="35"/>
                                     </constraint>
                                     <constraint firstAttribute="width" constant="70" id="x0e-zQ-tB1">
-                                        <variation key="heightClass=compact-widthClass=compact" constant="60"/>
+                                        <variation key="heightClass=compact-widthClass=compact" constant="35"/>
                                     </constraint>
                                 </constraints>
                                 <state key="normal" image="buyFullVersionButton.png"/>
@@ -144,6 +147,22 @@
             </objects>
             <point key="canvasLocation" x="-1890.2343749999998" y="-600.87847730600288"/>
         </scene>
+        <!--Levels View Controller-->
+        <scene sceneID="Qcq-0u-OJp">
+            <objects>
+                <viewController id="6wp-Ce-ZEX" customClass="LevelsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u7x-IY-ipv">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.14509803921568626" green="0.19215686274509802" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Z35-iu-bkP"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nZ7-Ku-ay0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N92-gm-fwD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-967" y="-1500"/>
+        </scene>
         <!--About View Controller-->
         <scene sceneID="dfn-Ke-zl6">
             <objects>
@@ -155,15 +174,23 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aboutText.png" translatesAutoresizingMaskIntoConstraints="NO" id="QBq-iK-6Xn">
                                 <rect key="frame" x="323.5" y="246" width="719" height="532"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="532" id="AvV-rT-gH7"/>
-                                    <constraint firstAttribute="width" constant="719" id="MSG-zO-Qeq"/>
+                                    <constraint firstAttribute="height" constant="532" id="AvV-rT-gH7">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="266"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="719" id="MSG-zO-Qeq">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="360"/>
+                                    </constraint>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXI-g4-1EJ">
                                 <rect key="frame" x="40" y="40" width="80" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="ArE-JB-xyN"/>
-                                    <constraint firstAttribute="height" constant="80" id="Hbd-i2-Ghs"/>
+                                    <constraint firstAttribute="width" constant="80" id="ArE-JB-xyN">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="40"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="80" id="Hbd-i2-Ghs">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="40"/>
+                                    </constraint>
                                 </constraints>
                                 <state key="normal" image="homeButton.png"/>
                                 <connections>
@@ -173,9 +200,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.14509803921568626" green="0.19215686274509802" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="jXI-g4-1EJ" firstAttribute="leading" secondItem="nPf-w9-5eW" secondAttribute="leading" constant="40" id="2LS-qQ-aob"/>
+                            <constraint firstItem="jXI-g4-1EJ" firstAttribute="leading" secondItem="nPf-w9-5eW" secondAttribute="leading" constant="40" id="2LS-qQ-aob">
+                                <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                            </constraint>
                             <constraint firstItem="QBq-iK-6Xn" firstAttribute="centerX" secondItem="co8-8T-CU3" secondAttribute="centerX" id="7Cx-rA-L1D"/>
-                            <constraint firstItem="jXI-g4-1EJ" firstAttribute="top" secondItem="nPf-w9-5eW" secondAttribute="top" constant="40" id="Fad-2c-vx5"/>
+                            <constraint firstItem="jXI-g4-1EJ" firstAttribute="top" secondItem="nPf-w9-5eW" secondAttribute="top" constant="40" id="Fad-2c-vx5">
+                                <variation key="heightClass=compact-widthClass=compact" constant="20"/>
+                            </constraint>
                             <constraint firstItem="QBq-iK-6Xn" firstAttribute="centerY" secondItem="co8-8T-CU3" secondAttribute="centerY" id="PTC-Ey-QHz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nPf-w9-5eW"/>
