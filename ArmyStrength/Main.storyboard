@@ -75,6 +75,9 @@
                                             </constraint>
                                         </constraints>
                                         <state key="normal" image="optionsButton.png"/>
+                                        <connections>
+                                            <segue destination="BTG-v5-lZf" kind="show" id="Yjg-K4-MdI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -154,7 +157,24 @@
                     <view key="view" contentMode="scaleToFill" id="u7x-IY-ipv">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0a-Ux-JHE">
+                                <rect key="frame" x="40" y="40" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="PHZ-C9-MwI"/>
+                                    <constraint firstAttribute="height" constant="80" id="RBd-B6-RdH"/>
+                                </constraints>
+                                <state key="normal" image="homeButton.png"/>
+                                <connections>
+                                    <action selector="HomeButton:" destination="6wp-Ce-ZEX" eventType="touchUpInside" id="X04-eo-VS3"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.14509803921568626" green="0.19215686274509802" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Q0a-Ux-JHE" firstAttribute="top" secondItem="Z35-iu-bkP" secondAttribute="top" constant="40" id="1Jw-MA-Y6S"/>
+                            <constraint firstItem="Q0a-Ux-JHE" firstAttribute="leading" secondItem="Z35-iu-bkP" secondAttribute="leading" constant="40" id="IM6-Ja-VhI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Z35-iu-bkP"/>
                     </view>
                     <navigationItem key="navigationItem" id="nZ7-Ku-ay0"/>
@@ -162,6 +182,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N92-gm-fwD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-967" y="-1500"/>
+        </scene>
+        <!--Options View Controller-->
+        <scene sceneID="DAV-Dt-etU">
+            <objects>
+                <viewController id="BTG-v5-lZf" customClass="OptionsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lqi-OC-xim">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHy-9a-0HK">
+                                <rect key="frame" x="40" y="40" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="wFI-V5-88K"/>
+                                    <constraint firstAttribute="height" constant="80" id="zzk-jd-hmj"/>
+                                </constraints>
+                                <state key="normal" image="homeButton.png"/>
+                                <connections>
+                                    <action selector="HomeButton:" destination="BTG-v5-lZf" eventType="touchUpInside" id="w02-rn-PQN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14509803921568626" green="0.19215686274509802" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AHy-9a-0HK" firstAttribute="leading" secondItem="khH-uU-TjY" secondAttribute="leading" constant="40" id="0N4-Vj-EMl"/>
+                            <constraint firstItem="AHy-9a-0HK" firstAttribute="top" secondItem="khH-uU-TjY" secondAttribute="top" constant="40" id="SbA-eu-4vm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="khH-uU-TjY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cwZ-Sw-47q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j6d-QN-VEV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-979" y="-602"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="dfn-Ke-zl6">
@@ -215,7 +268,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aPC-mi-KWq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-982.13762811127367" y="-610.546875"/>
+            <point key="canvasLocation" x="-967" y="449"/>
         </scene>
     </scenes>
     <resources>

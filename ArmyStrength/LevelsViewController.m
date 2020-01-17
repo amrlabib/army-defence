@@ -13,6 +13,9 @@
 @end
 
 @implementation LevelsViewController
+- (IBAction)HomeButton:(id)sender {
+    [[self navigationController] popViewControllerAnimated:true];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -21,15 +24,13 @@
 
 -(id) initLevels
 {
+    savedTextRef = [[savedText alloc] init];
+    
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
 
     screenWidth = screenBounds.size.width;
     screenHeight = screenBounds.size.height;
     // soundObject = sound;
-    
-    
-    
-    // savedTextRef = text;
     
     
     
@@ -49,11 +50,6 @@
     CGSize windowBounds ;
     windowBounds.width  =  screenWidth;
     windowBounds.height = screenHeight;
-    
-//    currentGame = [[gameObject alloc] init:ref :  windowBounds : savedTextRef  :  soundObject];
-//    [currentGame setGameObjectDelegate:self];
-    
-    
     
     if([[savedTextRef levelsPurchasedText] isEqualToString:[[NSString alloc] initWithString:@"0"]] )
     {
@@ -291,7 +287,7 @@
     
     
     if( l == 1  || (int)[savedTextRef getLevelValue: l] > 0 || ( l > 1  &&  (int)[savedTextRef getLevelValue:l-1 ] > 0 )  )
-        [(UIButton*)[self subviews][l+1] setUserInteractionEnabled:true];
+        [(UIButton*)[self.view subviews][l+1] setUserInteractionEnabled:true];
     else
         [(UIButton*)[self.view subviews][l+1] setUserInteractionEnabled:false];
 }
@@ -303,6 +299,17 @@
     {
         [self updateLevelsButton:i];
     }
+}
+
+-(UIButton*) initButtonAttr : (int) x :  (int) y : (int) width : (int) height : (NSString*) name
+{
+    UIButton* currentButton = [[UIButton alloc] initWithFrame:CGRectMake(x , y, width, height)];
+    [currentButton setTitle:name forState:UIControlStateNormal ];
+    [currentButton addTarget:self action:@selector(buttonClickHandler:) forControlEvents:UIControlEventTouchUpInside];
+    [currentButton setImage:[UIImage imageNamed:name] forState:UIControlStateNormal];
+    currentButton.exclusiveTouch =YES;
+
+    return currentButton;
 }
 
 @end
