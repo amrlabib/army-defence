@@ -13,6 +13,9 @@
 @end
 
 @implementation OptionsViewController
+
+@synthesize recipeName;
+
 - (IBAction)HomeButton:(id)sender {
     [[self navigationController] popViewControllerAnimated:true];
 }
@@ -24,7 +27,6 @@
 
 -(id) initOptions
 {
-    // soundRef = sound;
     savedTextRef = [[savedText alloc] init];
     
     starURL = @"star.png";
@@ -39,10 +41,7 @@
         starURL = @"starSmall.png";
     }
     
-    
     [self addTextAndButtons : screenWidth : screenHeight];
-    
-    return self;
 }
 -(void) addTextAndButtons : (int) screenWidth : (int) screenHeight
 {
@@ -157,14 +156,14 @@
             [soundButton setTitle:@"soundOff.png" forState:UIControlStateNormal];
             [soundButton setImage:[UIImage imageNamed:@"soundOff.png"] forState:UIControlStateNormal];
             [savedTextRef updateLevel:26 :0];
-            [soundRef setSoundEnabled:false];
+            [_soundRef setSoundEnabled:false];
         }
         else if([[soundButton currentTitle] isEqualToString: @"soundOff.png" ])
         {
             [soundButton setTitle:@"soundOn.png" forState:UIControlStateNormal];
             [soundButton setImage:[UIImage imageNamed:@"soundOn.png"] forState:UIControlStateNormal];
             [savedTextRef updateLevel:26 :1];
-            [soundRef setSoundEnabled:true];
+            [_soundRef setSoundEnabled:true];
         }
     }
     else if((UIButton*)sender == musicButton)
@@ -174,16 +173,16 @@
             [musicButton setTitle:@"soundOff.png" forState:UIControlStateNormal];
             [musicButton setImage:[UIImage imageNamed:@"soundOff.png"] forState:UIControlStateNormal];
             [savedTextRef updateLevel:27 :0];
-            [soundRef stopMySoundFile:@"gameMusic"];
-            [soundRef setMusicEnabled:false];
+            [_soundRef stopMySoundFile:@"gameMusic"];
+            [_soundRef setMusicEnabled:false];
         }
         else if([[musicButton currentTitle] isEqualToString: @"soundOff.png" ])
         {
             [musicButton setTitle:@"soundOn.png" forState:UIControlStateNormal];
             [musicButton setImage:[UIImage imageNamed:@"soundOn.png"] forState:UIControlStateNormal];
             [savedTextRef updateLevel:27 :1];
-            [soundRef setMusicEnabled:true];
-            [soundRef playMySoundFile:@"gameMusic"];
+            [_soundRef setMusicEnabled:true];
+            [_soundRef playMySoundFile:@"gameMusic"];
 
         }
     }
@@ -210,8 +209,7 @@
         [savedTextRef updateLevel:25 :3];
 
     }
-    [soundRef playMySoundFile:@"buttonSound"];
-
+    [_soundRef playMySoundFile:@"buttonSound"];
 }
 
 @end

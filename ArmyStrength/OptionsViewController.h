@@ -18,9 +18,11 @@ NS_ASSUME_NONNULL_BEGIN
     savedText *savedTextRef;
     
     NSString *starURL;
-    
-    soundEffectsHandler *soundRef;
 }
+
+@property (nonatomic, strong) soundEffectsHandler *soundRef;
+@property (nonatomic, strong) NSString *recipeName;
+
 -(id) initOptions;
 -(void) addTextAndButtons : (int) screenWidth : (int) screenHeight;
 @end

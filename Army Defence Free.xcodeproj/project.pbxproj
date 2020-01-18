@@ -34,7 +34,6 @@
 		5E82F46317AB0F4E00D87C8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E82F46117AB0F4E00D87C8C /* InfoPlist.strings */; };
 		5E82F46517AB0F4E00D87C8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E82F46417AB0F4E00D87C8C /* main.m */; };
 		5E82F46917AB0F4E00D87C8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E82F46817AB0F4E00D87C8C /* AppDelegate.m */; };
-		5E82F47817AB0F4E00D87C8C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E82F47717AB0F4E00D87C8C /* ViewController.m */; };
 		5E82F48117AB0F4E00D87C8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E82F45817AB0F4E00D87C8C /* UIKit.framework */; };
 		5E82F48217AB0F4E00D87C8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E82F45A17AB0F4E00D87C8C /* Foundation.framework */; };
 		5E82F48A17AB0F4E00D87C8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E82F48817AB0F4E00D87C8C /* InfoPlist.strings */; };
@@ -271,8 +270,6 @@
 		5E82F46617AB0F4E00D87C8C /* Army Defence Free-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Army Defence Free-Prefix.pch"; sourceTree = "<group>"; };
 		5E82F46717AB0F4E00D87C8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5E82F46817AB0F4E00D87C8C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5E82F47617AB0F4E00D87C8C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5E82F47717AB0F4E00D87C8C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5E82F47E17AB0F4E00D87C8C /* Army Defence FreeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Army Defence FreeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E82F48717AB0F4E00D87C8C /* Army Defence FreeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Army Defence FreeTests-Info.plist"; sourceTree = "<group>"; };
 		5E82F48917AB0F4E00D87C8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -714,8 +711,6 @@
 			children = (
 				5E82F46717AB0F4E00D87C8C /* AppDelegate.h */,
 				5E82F46817AB0F4E00D87C8C /* AppDelegate.m */,
-				5E82F47617AB0F4E00D87C8C /* ViewController.h */,
-				5E82F47717AB0F4E00D87C8C /* ViewController.m */,
 				5E82F45F17AB0F4E00D87C8C /* Supporting Files */,
 				5EB3622A23C4EB9E00D13482 /* LaunchScreen.storyboard */,
 				5EB3622C23C4EC4300D13482 /* Main.storyboard */,
@@ -1116,7 +1111,6 @@
 			files = (
 				5E82F46517AB0F4E00D87C8C /* main.m in Sources */,
 				5E82F46917AB0F4E00D87C8C /* AppDelegate.m in Sources */,
-				5E82F47817AB0F4E00D87C8C /* ViewController.m in Sources */,
 				5E82F49917AB0FC900D87C8C /* DrawableObject.m in Sources */,
 				5E82F49C17AB179300D87C8C /* Shooter.m in Sources */,
 				5ECCE70C17AC0A4800CAF594 /* Tank.m in Sources */,

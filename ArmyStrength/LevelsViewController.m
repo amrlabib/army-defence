@@ -34,6 +34,14 @@
     
     
     
+    CGSize windowBounds ;
+    windowBounds.width  =  screenWidth;
+    windowBounds.height = screenHeight;
+    
+    
+    currentGame = [[gameObject alloc] init:self.view :  windowBounds : savedTextRef  :  soundObject];
+    [currentGame setGameObjectDelegate:self];
+    
     
     buttonsSize.width = screenHeight*0.13;
     buttonsSize.height = screenHeight*0.13;
@@ -47,9 +55,6 @@
     [self addButtons ];
     
     
-    CGSize windowBounds ;
-    windowBounds.width  =  screenWidth;
-    windowBounds.height = screenHeight;
     
     if([[savedTextRef levelsPurchasedText] isEqualToString:[[NSString alloc] initWithString:@"0"]] )
     {

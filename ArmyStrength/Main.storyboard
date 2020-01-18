@@ -76,7 +76,7 @@
                                         </constraints>
                                         <state key="normal" image="optionsButton.png"/>
                                         <connections>
-                                            <segue destination="BTG-v5-lZf" kind="show" id="Yjg-K4-MdI"/>
+                                            <segue destination="BTG-v5-lZf" kind="show" identifier="showOptions" id="Yjg-K4-MdI"/>
                                         </connections>
                                     </button>
                                 </subviews>
