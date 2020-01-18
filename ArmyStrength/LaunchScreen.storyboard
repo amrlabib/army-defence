@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="ipad12_9" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <device id="retina5_5" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -13,83 +13,97 @@
             <objects>
                 <viewController storyboardIdentifier="backgroundStoryBoard" id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-manShooter.png" translatesAutoresizingMaskIntoConstraints="NO" id="bdZ-dx-BfL">
-                                <rect key="frame" x="501.5" y="668" width="363" height="326"/>
+                                <rect key="frame" x="298" y="274" width="140" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="363" id="5zg-e6-Ccf">
                                         <variation key="heightClass=compact-widthClass=compact" constant="140"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="140"/>
                                     </constraint>
                                     <constraint firstAttribute="height" constant="326" id="XuF-d6-w4I">
                                         <variation key="heightClass=compact-widthClass=compact" constant="140"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="140"/>
                                     </constraint>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-electric.png" translatesAutoresizingMaskIntoConstraints="NO" id="6ro-xB-65C">
-                                <rect key="frame" x="1056" y="381" width="260" height="262"/>
+                                <rect key="frame" x="616" y="147" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="262" id="Fx5-4S-bul">
                                         <variation key="heightClass=compact-widthClass=compact" constant="120"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="120"/>
                                     </constraint>
                                     <constraint firstAttribute="width" constant="260" id="mmq-64-Zig">
                                         <variation key="heightClass=compact-widthClass=compact" constant="120"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="120"/>
                                     </constraint>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-plane.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZSy-on-rGo">
-                                <rect key="frame" x="934" y="70" width="432" height="312"/>
+                                <rect key="frame" x="526" y="0.0" width="140" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="312" id="hip-8X-SFL">
                                         <variation key="heightClass=compact-widthClass=compact" constant="150"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="140"/>
                                     </constraint>
                                     <constraint firstAttribute="width" constant="432" id="lNu-Jt-cdB">
                                         <variation key="heightClass=compact-widthClass=compact" constant="140"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="140"/>
                                     </constraint>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-apache.png" translatesAutoresizingMaskIntoConstraints="NO" id="bsp-BM-zka">
-                                <rect key="frame" x="67" y="30" width="319" height="340"/>
+                                <rect key="frame" x="60" y="10" width="120" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="340" id="Qtk-7W-P9Y">
                                         <variation key="heightClass=compact-widthClass=compact" constant="140"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="140"/>
                                     </constraint>
                                     <constraint firstAttribute="width" constant="319" id="sGE-9K-YBD">
                                         <variation key="heightClass=compact-widthClass=compact" constant="120"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="120"/>
                                     </constraint>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-strongElectric.png" translatesAutoresizingMaskIntoConstraints="NO" id="aEL-pi-Tj1">
-                                <rect key="frame" x="50" y="379.5" width="265" height="265"/>
+                                <rect key="frame" x="0.0" y="147" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="265" id="FSo-rI-UHO">
                                         <variation key="heightClass=compact-widthClass=compact" constant="120"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="120"/>
                                     </constraint>
                                     <constraint firstAttribute="width" constant="265" id="mBG-oe-Qna">
                                         <variation key="heightClass=compact-widthClass=compact" constant="120"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="120"/>
                                     </constraint>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-starShooter.png" translatesAutoresizingMaskIntoConstraints="NO" id="wTi-84-4gn">
-                                <rect key="frame" x="100" y="690" width="416" height="284"/>
+                                <rect key="frame" x="100" y="294" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="284" id="lpz-uk-1mi">
                                         <variation key="heightClass=compact-widthClass=compact" constant="120"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="120"/>
                                     </constraint>
                                     <constraint firstAttribute="width" constant="416" id="rgh-V8-016">
                                         <variation key="heightClass=compact-widthClass=compact" constant="120"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="120"/>
                                     </constraint>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-singleArmShooter.png" translatesAutoresizingMaskIntoConstraints="NO" id="jlo-HT-nfe">
-                                <rect key="frame" x="870" y="684" width="346" height="290"/>
+                                <rect key="frame" x="466" y="294" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="346" id="724-Dd-9o3">
                                         <variation key="heightClass=compact-widthClass=compact" constant="120"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="120"/>
                                     </constraint>
                                     <constraint firstAttribute="height" constant="290" id="sw2-Pr-I3A">
                                         <variation key="heightClass=compact-widthClass=compact" constant="120"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="120"/>
                                     </constraint>
                                 </constraints>
                             </imageView>
@@ -97,13 +111,16 @@
                         <color key="backgroundColor" red="0.14509803921568626" green="0.19215686274509802" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bsp-BM-zka" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="67" id="4Vj-DA-gJ0">
-                                <variation key="heightClass=compact-widthClass=compact" constant="70"/>
+                                <variation key="heightClass=compact-widthClass=compact" constant="60"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="60"/>
                             </constraint>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="bdZ-dx-BfL" secondAttribute="bottom" constant="30" id="8bO-g3-zJJ">
                                 <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="jlo-HT-nfe" secondAttribute="bottom" constant="50" id="9is-FF-RwE">
                                 <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="bdZ-dx-BfL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="BfL-kd-kfj"/>
                             <constraint firstItem="wTi-84-4gn" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="100" id="FCv-LQ-N8z">
@@ -111,9 +128,11 @@
                             </constraint>
                             <constraint firstItem="ZSy-on-rGo" firstAttribute="trailing" secondItem="Bcu-3y-fUS" secondAttribute="trailing" id="Hys-MK-ZnR">
                                 <variation key="heightClass=compact-widthClass=compact" constant="-70"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="-70"/>
                             </constraint>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="6ro-xB-65C" secondAttribute="trailing" constant="50" id="MOp-aB-Kot">
                                 <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="jlo-HT-nfe" secondAttribute="trailing" constant="150" id="N7Y-Rb-62F">
                                 <variation key="heightClass=compact-widthClass=compact" constant="120"/>
@@ -121,16 +140,20 @@
                             <constraint firstItem="aEL-pi-Tj1" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Xei-yT-jDW"/>
                             <constraint firstItem="ZSy-on-rGo" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="70" id="ZbO-Qf-sBH">
                                 <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="bsp-BM-zka" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="30" id="eQM-BK-Vqb">
                                 <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="10"/>
                             </constraint>
                             <constraint firstItem="aEL-pi-Tj1" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="50" id="gCF-kV-Mdx">
                                 <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="6ro-xB-65C" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="peC-mx-ren"/>
                             <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="wTi-84-4gn" secondAttribute="bottom" constant="50" id="wUE-it-bq3">
                                 <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                             </constraint>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
