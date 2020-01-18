@@ -12,7 +12,7 @@
 
 @synthesize  blockSize , xStart , yStart , board  ,bombBoard, cols , rows,endBlocksShapes ;//, startIndex , endIndex ;
 
--(id) init : (UIView*) ref : (int) screenWidth : (int) screenHeight 
+-(id) init : (UIView*) ref : (int) screenWidth : (int) screenHeight : (int) xMargin : (int) yMargin
 {
     
     endBlocksShapes = [[NSMutableArray alloc] init];
@@ -22,45 +22,17 @@
     
     gridView = [UIView new];
     gridBoard = [[NSMutableArray alloc] init];
-    [gridView initWithFrame:CGRectMake(0, 0, screenWidth, screenHeight)];
+    [gridView initWithFrame:CGRectMake(xMargin, yMargin, screenWidth, screenHeight)];
 
     viewReference =  ref;
     
     
-    cols =  16;
-    rows =  12;
+    rows =  [self isIpad] ? 12 : 10;
     
-    blockSize.width =  (int)(screenWidth / cols);
-    blockSize.height = (int)(screenHeight / rows);
+    blockSize.width =  (int)(screenHeight / rows);
+    blockSize.height = blockSize.width;
     
-    if(screenWidth == 480) //iphone 4s
-    {
-        cols =  15;
-        rows = 10;
-        blockSize.width =  (int)(screenWidth / cols);
-        blockSize.height = (int)(screenHeight / rows);
-    }
-    else if(screenWidth == 568) //iphone 5s
-    {
-        cols = 17;
-        rows = 10;
-        blockSize.width = 32;
-        blockSize.height = 32;
-    }
-    else if(screenWidth == 667)  //iphone 7
-    {
-        cols = 18;
-        rows = 10;
-        blockSize.width = 37;
-        blockSize.height = 37;
-    }
-    else if(screenWidth == 736)  //iphone 7-plus
-    {
-        cols = 18;
-        rows = 10;
-        blockSize.width = 41;
-        blockSize.height = 41;
-    }
+    cols = (int)(screenWidth / blockSize.width);
     
     
     xStart = (screenWidth  - (blockSize.width * cols)) / 2;
@@ -260,5 +232,15 @@
     
     [super dealloc];
 }
+
+- (bool)isIpad
+{
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        return true;
+    }
+    return false;
+}
+
 
 @end

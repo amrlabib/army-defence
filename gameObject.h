@@ -36,6 +36,7 @@
 @interface gameObject : UIView <UIApplicationDelegate, delegateFunctions >
 {
     CGSize currentWindowBounds;
+    CGSize currentWindowBoundsFull;
     NSTimer *gameTimer;
     gameBoard *boardObject;
     
@@ -133,6 +134,11 @@
     
     
     bool rateLater;
+    
+    int bottomSafeArea;
+    int topSafeArea;
+    int rightSafeaArea;
+    int leftSafeArea;
 }
 
 @property  (retain) id gameObjectDelegate;
@@ -168,7 +174,7 @@
 -(void) setCurrentPressedWeapon : (UITouch*) touch : (CGPoint) location;
 -(void) setAddShootersRangeCircle : (CGPoint) location;
 
-
+-(void) setSafeAreaValues;
 
 
 @end
