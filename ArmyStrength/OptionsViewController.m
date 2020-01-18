@@ -14,8 +14,6 @@
 
 @implementation OptionsViewController
 
-@synthesize recipeName;
-
 - (IBAction)HomeButton:(id)sender {
     [[self navigationController] popViewControllerAnimated:true];
 }
@@ -43,6 +41,7 @@
     
     [self addTextAndButtons : screenWidth : screenHeight];
 }
+
 -(void) addTextAndButtons : (int) screenWidth : (int) screenHeight
 {
     CGSize soundImagesSize;

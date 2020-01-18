@@ -11,7 +11,8 @@
 #import "soundEffectsHandler.h"
 #import "savedText.h"
 #import "bullet.h"
-#import "OptionsViewController.h";
+#import "OptionsViewController.h"
+#import "LevelsViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -30,18 +30,13 @@
 
     screenWidth = screenBounds.size.width;
     screenHeight = screenBounds.size.height;
-    // soundObject = sound;
     
     
     
     CGSize windowBounds ;
     windowBounds.width  =  screenWidth;
     windowBounds.height = screenHeight;
-    
-    
-    currentGame = [[gameObject alloc] init:self.view :  windowBounds : savedTextRef  :  soundObject];
-    [currentGame setGameObjectDelegate:self];
-    
+        
     
     buttonsSize.width = screenHeight*0.13;
     buttonsSize.height = screenHeight*0.13;
@@ -70,7 +65,7 @@
 
 -(void) restoreButtonClicked : (id) sender
 {
-    [soundObject playMySoundFile:@"buttonSound"];
+    [_soundRef playMySoundFile:@"buttonSound"];
     if( ![inAppPurchaseObj alreadingMakingPurchase])
     {
         [inAppPurchaseObj restoreMyProduct];
@@ -269,7 +264,7 @@
     
     if( buttonNumber != 1 && buttonNumber != 13 && buttonNumber > 7  &&  ![[savedTextRef levelsPurchasedText] isEqualToString:[[NSString alloc] initWithString:@"1"]] )
     {
-        [soundObject playMySoundFile:@"buttonSound"];
+        [_soundRef playMySoundFile:@"buttonSound"];
         if( ![inAppPurchaseObj alreadingMakingPurchase])
         {
             [inAppPurchaseObj setProductId:@"allLevels"];
@@ -278,10 +273,16 @@
     }
     else
     {
-        [soundObject playMySoundFile:@"buttonSound"];
-        [soundObject stopMySoundFile:@"gameMusic"];
-        [currentGame addGameView];
-        [currentGame initializeAttributes : buttonNumber];
+        [_soundRef playMySoundFile:@"buttonSound"];
+        [_soundRef stopMySoundFile:@"gameMusic"];
+        
+        GameViewController *newGameViewController = [[GameViewController alloc] init];
+        newGameViewController.levelNumber = buttonNumber;
+        newGameViewController.soundRef = _soundRef;
+        [[self navigationController] pushViewController:newGameViewController animated:true];
+    
+        // [currentGame addGameView];
+        // [currentGame initializeAttributes : buttonNumber];
     }
 }
 

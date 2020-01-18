@@ -21,7 +21,6 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 @property (nonatomic, strong) soundEffectsHandler *soundRef;
-@property (nonatomic, strong) NSString *recipeName;
 
 -(id) initOptions;
 -(void) addTextAndButtons : (int) screenWidth : (int) screenHeight;

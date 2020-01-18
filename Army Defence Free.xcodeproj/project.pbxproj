@@ -13,6 +13,7 @@
 		5E2A042623D113FC00AE988C /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A042523D113FC00AE988C /* AboutViewController.m */; };
 		5E2A042923D1BE4800AE988C /* LevelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A042823D1BE4800AE988C /* LevelsViewController.m */; };
 		5E2A042C23D1DA1100AE988C /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A042B23D1DA1100AE988C /* OptionsViewController.m */; };
+		5E2A043223D310E000AE988C /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A043123D310E000AE988C /* GameViewController.m */; };
 		5E3D33E2180BF0F800640BE1 /* savedText.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D33E1180BF0F800640BE1 /* savedText.m */; };
 		5E4271F6180453C500688B65 /* levelAttr.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4271F5180453C500688B65 /* levelAttr.m */; };
 		5E449DD718181D9500417BF0 /* BombView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E449DD618181D9500417BF0 /* BombView.m */; };
@@ -231,6 +232,8 @@
 		5E2A042823D1BE4800AE988C /* LevelsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LevelsViewController.m; sourceTree = "<group>"; };
 		5E2A042A23D1DA1100AE988C /* OptionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OptionsViewController.h; sourceTree = "<group>"; };
 		5E2A042B23D1DA1100AE988C /* OptionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OptionsViewController.m; sourceTree = "<group>"; };
+		5E2A043023D310E000AE988C /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		5E2A043123D310E000AE988C /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		5E3D33E0180BF0F800640BE1 /* savedText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = savedText.h; sourceTree = "<group>"; };
 		5E3D33E1180BF0F800640BE1 /* savedText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = savedText.m; sourceTree = "<group>"; };
 		5E4271F4180453C500688B65 /* levelAttr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = levelAttr.h; sourceTree = "<group>"; };
@@ -722,6 +725,8 @@
 				5E2A042823D1BE4800AE988C /* LevelsViewController.m */,
 				5E2A042A23D1DA1100AE988C /* OptionsViewController.h */,
 				5E2A042B23D1DA1100AE988C /* OptionsViewController.m */,
+				5E2A043023D310E000AE988C /* GameViewController.h */,
+				5E2A043123D310E000AE988C /* GameViewController.m */,
 			);
 			path = ArmyStrength;
 			sourceTree = "<group>";
@@ -1113,6 +1118,7 @@
 				5E82F46917AB0F4E00D87C8C /* AppDelegate.m in Sources */,
 				5E82F49917AB0FC900D87C8C /* DrawableObject.m in Sources */,
 				5E82F49C17AB179300D87C8C /* Shooter.m in Sources */,
+				5E2A043223D310E000AE988C /* GameViewController.m in Sources */,
 				5ECCE70C17AC0A4800CAF594 /* Tank.m in Sources */,
 				5E2A042623D113FC00AE988C /* AboutViewController.m in Sources */,
 				5ECCE71117AC644900CAF594 /* gameBoard.m in Sources */,

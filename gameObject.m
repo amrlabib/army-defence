@@ -36,11 +36,6 @@
     
     return self;
 }
--(void) addGameView
-{
-    [viewReference addSubview:self];
-
-}
 -(void) pauseTheTimer
 {
     if(gameTimer!=NULL)
@@ -244,7 +239,9 @@
     
     [soundEffectsObject playMySoundFile:@"gameMusic"];
     [self releaseOjects];
-    [self removeFromSuperview];
+    [[[self gameObjectDelegate] navigationController] popViewControllerAnimated:true];
+    
+    // [self removeFromSuperview];
 }
 
 
@@ -605,7 +602,7 @@
     [gameTimer invalidate ];
     gameTimer = NULL;
     [savedTextRef updateLevel:level.levelNumber :difficulty];
-    [[self gameObjectDelegate] updateLevelButton : level.levelNumber ];
+    // [[self gameObjectDelegate] updateLevelButton : level.levelNumber ];
     
     
     popUpMessages *vMessage = [[popUpMessages alloc] init:self :currentWindowBounds :@"victoryImage.png" : difficulty :soundEffectsObject];
@@ -1413,7 +1410,7 @@
         }
         else if((UIButton*)sender == homeButton )
         {
-            if(level.levelNumber ==1 )
+            if(level.levelNumber == 1)
             {
                 [tutorialObject pause];
 
@@ -1426,7 +1423,7 @@
                 ;
             else
             {
-                [gameTimer invalidate ];
+                [gameTimer invalidate];
                 gameTimer = NULL;
                 [soundEffectsObject stopLoopingSounds];
                 pausedDueToPopUpMessage = true;

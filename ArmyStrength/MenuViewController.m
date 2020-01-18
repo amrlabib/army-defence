@@ -42,9 +42,12 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([segue.identifier isEqualToString:@"showOptions"])
+    if ([segue.identifier isEqualToString:@"showOptionsSegue"])
     {
         OptionsViewController *vc = segue.destinationViewController;
+        vc.soundRef = soundObject;
+    } else if ([segue.identifier isEqualToString:@"showLevelsSegue"]) {
+        LevelsViewController *vc = segue.destinationViewController;
         vc.soundRef = soundObject;
     }
 }

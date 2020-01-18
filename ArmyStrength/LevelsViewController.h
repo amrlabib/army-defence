@@ -7,29 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "gameObject.h"
 #import "savedText.h"
 #import "InAppPurchaseController.h"
+#import "GameViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LevelsViewController : UIViewController
 {
     CGSize buttonsSize;
-    gameObject *currentGame;
-    
-    
     savedText *savedTextRef;
     
     InAppPurchaseController *inAppPurchaseObj;
-    
-    
     int screenWidth , screenHeight;
-    
-    
-    soundEffectsHandler *soundObject;
-    
 }
+
+@property (nonatomic, strong) soundEffectsHandler *soundRef;
 
 -(id) initLevels;
 -(void) addButtons ;

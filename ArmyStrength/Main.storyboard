@@ -61,7 +61,7 @@
                                         </constraints>
                                         <state key="normal" image="playButton.png"/>
                                         <connections>
-                                            <segue destination="6wp-Ce-ZEX" kind="show" id="LV4-nG-Owj"/>
+                                            <segue destination="6wp-Ce-ZEX" kind="show" identifier="showLevelsSegue" id="LV4-nG-Owj"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KO7-sk-LeR">
@@ -76,7 +76,7 @@
                                         </constraints>
                                         <state key="normal" image="optionsButton.png"/>
                                         <connections>
-                                            <segue destination="BTG-v5-lZf" kind="show" identifier="showOptions" id="Yjg-K4-MdI"/>
+                                            <segue destination="BTG-v5-lZf" kind="show" identifier="showOptionsSegue" id="Yjg-K4-MdI"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -269,6 +269,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aPC-mi-KWq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-967" y="449"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="oqi-z3-bOq">
+            <objects>
+                <viewController id="aQ5-3g-HOc" customClass="GameViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GBx-1N-ezr">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Q2F-XV-BQG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ToJ-kf-lUG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-148" y="-1500"/>
         </scene>
     </scenes>
     <resources>
