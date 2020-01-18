@@ -14,6 +14,7 @@
 		5E2A042923D1BE4800AE988C /* LevelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A042823D1BE4800AE988C /* LevelsViewController.m */; };
 		5E2A042C23D1DA1100AE988C /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A042B23D1DA1100AE988C /* OptionsViewController.m */; };
 		5E2A043223D310E000AE988C /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A043123D310E000AE988C /* GameViewController.m */; };
+		5E2A043423D39BD600AE988C /* header-text.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E2A043323D39BD600AE988C /* header-text.png */; };
 		5E3D33E2180BF0F800640BE1 /* savedText.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D33E1180BF0F800640BE1 /* savedText.m */; };
 		5E4271F6180453C500688B65 /* levelAttr.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4271F5180453C500688B65 /* levelAttr.m */; };
 		5E449DD718181D9500417BF0 /* BombView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E449DD618181D9500417BF0 /* BombView.m */; };
@@ -234,6 +235,7 @@
 		5E2A042B23D1DA1100AE988C /* OptionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OptionsViewController.m; sourceTree = "<group>"; };
 		5E2A043023D310E000AE988C /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		5E2A043123D310E000AE988C /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		5E2A043323D39BD600AE988C /* header-text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "header-text.png"; path = "images/header-text.png"; sourceTree = "<group>"; };
 		5E3D33E0180BF0F800640BE1 /* savedText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = savedText.h; sourceTree = "<group>"; };
 		5E3D33E1180BF0F800640BE1 /* savedText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = savedText.m; sourceTree = "<group>"; };
 		5E4271F4180453C500688B65 /* levelAttr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = levelAttr.h; sourceTree = "<group>"; };
@@ -498,6 +500,7 @@
 		5E595F961833CA3600AFA488 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				5E2A043323D39BD600AE988C /* header-text.png */,
 				5EB3625223C520E800D13482 /* bg-apache.png */,
 				5EB3625323C520E800D13482 /* bg-electric.png */,
 				5EB3625023C520E800D13482 /* bg-manShooter.png */,
@@ -922,6 +925,7 @@
 				5EB361BD23C255F000D13482 /* 0.png in Resources */,
 				5EB3619123C255F000D13482 /* 8.png in Resources */,
 				5EB3622023C2568F00D13482 /* planeSound.caf in Resources */,
+				5E2A043423D39BD600AE988C /* header-text.png in Resources */,
 				5EB3621F23C2568F00D13482 /* bullet4.caf in Resources */,
 				5EB3625923C520E800D13482 /* bg-apache.png in Resources */,
 				5E82F46317AB0F4E00D87C8C /* InfoPlist.strings in Resources */,

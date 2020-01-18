@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zkm-gO-nZU">
-    <device id="retina5_5" orientation="landscape" appearance="light"/>
+    <device id="retina5_9" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -28,22 +28,22 @@
             <objects>
                 <viewController id="mZI-bN-0Af" customClass="MenuViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9YU-QJ-vFu">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="13W-Yx-x1a">
                                 <rect key="frame" x="552" y="298" width="262" height="429"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0y-6z-OKH">
-                                        <rect key="frame" x="30" y="136" width="100" height="64"/>
+                                        <rect key="frame" x="35" y="122" width="90" height="58"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="7H8-4I-NaX">
-                                                <variation key="heightClass=compact-widthClass=compact" constant="100"/>
-                                                <variation key="heightClass=compact-widthClass=regular" constant="100"/>
+                                                <variation key="heightClass=compact-widthClass=compact" constant="90"/>
+                                                <variation key="heightClass=compact-widthClass=regular" constant="90"/>
                                             </constraint>
                                             <constraint firstAttribute="height" constant="127" id="dSZ-Va-QVY">
-                                                <variation key="heightClass=compact-widthClass=compact" constant="64"/>
-                                                <variation key="heightClass=compact-widthClass=regular" constant="64"/>
+                                                <variation key="heightClass=compact-widthClass=compact" constant="58"/>
+                                                <variation key="heightClass=compact-widthClass=regular" constant="58"/>
                                             </constraint>
                                         </constraints>
                                         <state key="normal" image="aboutButton.png"/>
@@ -52,15 +52,15 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gT-pG-xa4">
-                                        <rect key="frame" x="30" y="0.0" width="100" height="64"/>
+                                        <rect key="frame" x="35" y="0.0" width="90" height="58"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="5D7-DR-Dhb">
-                                                <variation key="heightClass=compact-widthClass=compact" constant="100"/>
-                                                <variation key="heightClass=compact-widthClass=regular" constant="100"/>
+                                                <variation key="heightClass=compact-widthClass=compact" constant="90"/>
+                                                <variation key="heightClass=compact-widthClass=regular" constant="90"/>
                                             </constraint>
                                             <constraint firstAttribute="height" constant="128" id="9Zd-fe-T4x">
-                                                <variation key="heightClass=compact-widthClass=compact" constant="64"/>
-                                                <variation key="heightClass=compact-widthClass=regular" constant="64"/>
+                                                <variation key="heightClass=compact-widthClass=compact" constant="58"/>
+                                                <variation key="heightClass=compact-widthClass=regular" constant="58"/>
                                             </constraint>
                                         </constraints>
                                         <state key="normal" image="playButton.png"/>
@@ -69,15 +69,15 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KO7-sk-LeR">
-                                        <rect key="frame" x="30" y="68" width="100" height="64"/>
+                                        <rect key="frame" x="35" y="61" width="90" height="58"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="127" id="bzk-h1-1Yp">
-                                                <variation key="heightClass=compact-widthClass=compact" constant="64"/>
-                                                <variation key="heightClass=compact-widthClass=regular" constant="64"/>
+                                                <variation key="heightClass=compact-widthClass=compact" constant="58"/>
+                                                <variation key="heightClass=compact-widthClass=regular" constant="58"/>
                                             </constraint>
                                             <constraint firstAttribute="width" constant="200" id="iwD-tw-kFZ">
-                                                <variation key="heightClass=compact-widthClass=compact" constant="100"/>
-                                                <variation key="heightClass=compact-widthClass=regular" constant="100"/>
+                                                <variation key="heightClass=compact-widthClass=compact" constant="90"/>
+                                                <variation key="heightClass=compact-widthClass=regular" constant="90"/>
                                             </constraint>
                                         </constraints>
                                         <state key="normal" image="optionsButton.png"/>
@@ -95,8 +95,8 @@
                                         <variation key="heightClass=compact-widthClass=regular" constant="160"/>
                                     </constraint>
                                     <constraint firstAttribute="height" constant="409" id="QZz-v9-aFv">
-                                        <variation key="heightClass=compact-widthClass=compact" constant="200"/>
-                                        <variation key="heightClass=compact-widthClass=regular" constant="200"/>
+                                        <variation key="heightClass=compact-widthClass=compact" constant="180"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="180"/>
                                     </constraint>
                                     <constraint firstAttribute="bottom" secondItem="v0y-6z-OKH" secondAttribute="bottom" id="crv-ZG-yic"/>
                                     <constraint firstItem="2gT-pG-xa4" firstAttribute="centerX" secondItem="13W-Yx-x1a" secondAttribute="centerX" id="fuP-WW-SPz"/>
@@ -105,7 +105,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ku4-Df-ucv">
-                                <rect key="frame" x="10" y="369" width="35" height="35"/>
+                                <rect key="frame" x="54" y="309" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="wvG-D3-wg2">
                                         <variation key="heightClass=compact-widthClass=compact" constant="35"/>
@@ -122,7 +122,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y92-Yy-Ftc">
-                                <rect key="frame" x="55" y="369" width="35" height="35"/>
+                                <rect key="frame" x="99" y="309" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="Q0V-jG-m94">
                                         <variation key="heightClass=compact-widthClass=compact" constant="35"/>
@@ -145,9 +145,9 @@
                                 <variation key="heightClass=compact-widthClass=compact" constant="10"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="10"/>
                             </constraint>
-                            <constraint firstItem="13W-Yx-x1a" firstAttribute="top" secondItem="BRd-VO-TkA" secondAttribute="top" constant="200" id="BJM-tb-ta6">
-                                <variation key="heightClass=compact-widthClass=compact" constant="30"/>
-                                <variation key="heightClass=compact-widthClass=regular" constant="60"/>
+                            <constraint firstItem="13W-Yx-x1a" firstAttribute="top" secondItem="BRd-VO-TkA" secondAttribute="top" constant="230" id="BJM-tb-ta6">
+                                <variation key="heightClass=compact-widthClass=compact" constant="75"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="70"/>
                             </constraint>
                             <constraint firstItem="BRd-VO-TkA" firstAttribute="bottom" secondItem="Y92-Yy-Ftc" secondAttribute="bottom" constant="20" id="Ox5-jG-l4h">
                                 <variation key="heightClass=compact-widthClass=compact" constant="10"/>
@@ -176,11 +176,11 @@
             <objects>
                 <viewController id="6wp-Ce-ZEX" customClass="LevelsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u7x-IY-ipv">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q0a-Ux-JHE">
-                                <rect key="frame" x="20" y="20" width="35" height="35"/>
+                                <rect key="frame" x="64" y="20" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="PHZ-C9-MwI">
                                         <variation key="heightClass=compact-widthClass=compact" constant="35"/>
@@ -196,6 +196,19 @@
                                     <action selector="HomeButton:" destination="6wp-Ce-ZEX" eventType="touchUpInside" id="X04-eo-VS3"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="header-text.png" translatesAutoresizingMaskIntoConstraints="NO" id="FHd-P8-0fi">
+                                <rect key="frame" x="290" y="0.0" width="232" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="464" id="LIY-qB-xuI">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="232"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="232"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="210" id="tTk-Cl-wZ4">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="80"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="80"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.14509803921568626" green="0.19215686274509802" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -203,6 +216,8 @@
                                 <variation key="heightClass=compact-widthClass=compact" constant="20"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="20"/>
                             </constraint>
+                            <constraint firstItem="FHd-P8-0fi" firstAttribute="centerX" secondItem="u7x-IY-ipv" secondAttribute="centerX" id="2Y3-I8-hHJ"/>
+                            <constraint firstItem="FHd-P8-0fi" firstAttribute="top" secondItem="Z35-iu-bkP" secondAttribute="top" id="GAD-pG-rGq"/>
                             <constraint firstItem="Q0a-Ux-JHE" firstAttribute="leading" secondItem="Z35-iu-bkP" secondAttribute="leading" constant="40" id="IM6-Ja-VhI">
                                 <variation key="heightClass=compact-widthClass=compact" constant="20"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="20"/>
@@ -221,11 +236,11 @@
             <objects>
                 <viewController id="BTG-v5-lZf" customClass="OptionsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lqi-OC-xim">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHy-9a-0HK">
-                                <rect key="frame" x="20" y="20" width="35" height="35"/>
+                                <rect key="frame" x="64" y="20" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="wFI-V5-88K">
                                         <variation key="heightClass=compact-widthClass=compact" constant="35"/>
@@ -241,6 +256,19 @@
                                     <action selector="HomeButton:" destination="BTG-v5-lZf" eventType="touchUpInside" id="w02-rn-PQN"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="header-text.png" translatesAutoresizingMaskIntoConstraints="NO" id="YfO-fM-aXv">
+                                <rect key="frame" x="290" y="0.0" width="232" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="464" id="qRk-fO-e6X">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="232"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="232"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="210" id="xca-RX-k0h">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="80"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="80"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.14509803921568626" green="0.19215686274509802" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -248,10 +276,12 @@
                                 <variation key="heightClass=compact-widthClass=compact" constant="20"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="20"/>
                             </constraint>
+                            <constraint firstItem="YfO-fM-aXv" firstAttribute="centerX" secondItem="lqi-OC-xim" secondAttribute="centerX" id="Cz5-gq-TmF"/>
                             <constraint firstItem="AHy-9a-0HK" firstAttribute="top" secondItem="khH-uU-TjY" secondAttribute="top" constant="40" id="SbA-eu-4vm">
                                 <variation key="heightClass=compact-widthClass=compact" constant="20"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="20"/>
                             </constraint>
+                            <constraint firstItem="YfO-fM-aXv" firstAttribute="top" secondItem="khH-uU-TjY" secondAttribute="top" id="av5-WT-0wt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="khH-uU-TjY"/>
                     </view>
@@ -266,11 +296,11 @@
             <objects>
                 <viewController id="KqY-PR-VcB" customClass="AboutViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="co8-8T-CU3">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aboutText.png" translatesAutoresizingMaskIntoConstraints="NO" id="QBq-iK-6Xn">
-                                <rect key="frame" x="235" y="74" width="266" height="266"/>
+                                <rect key="frame" x="226" y="54.666666666666657" width="360" height="266"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="532" id="AvV-rT-gH7">
                                         <variation key="heightClass=compact-widthClass=compact" constant="266"/>
@@ -283,7 +313,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jXI-g4-1EJ">
-                                <rect key="frame" x="20" y="20" width="35" height="35"/>
+                                <rect key="frame" x="64" y="20" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="ArE-JB-xyN">
                                         <variation key="heightClass=compact-widthClass=compact" constant="35"/>
@@ -299,6 +329,19 @@
                                     <action selector="HomeButton:" destination="KqY-PR-VcB" eventType="touchUpInside" id="XkT-WU-Zha"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="header-text.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Qb-jE-xw0">
+                                <rect key="frame" x="290" y="0.0" width="232" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="464" id="6RH-16-Jxu">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="232"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="232"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="210" id="EGq-3j-a8h">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="80"/>
+                                        <variation key="heightClass=compact-widthClass=regular" constant="80"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.14509803921568626" green="0.19215686274509802" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -307,11 +350,13 @@
                                 <variation key="heightClass=compact-widthClass=regular" constant="20"/>
                             </constraint>
                             <constraint firstItem="QBq-iK-6Xn" firstAttribute="centerX" secondItem="co8-8T-CU3" secondAttribute="centerX" id="7Cx-rA-L1D"/>
+                            <constraint firstItem="5Qb-jE-xw0" firstAttribute="top" secondItem="nPf-w9-5eW" secondAttribute="top" id="AYI-Zh-kK3"/>
                             <constraint firstItem="jXI-g4-1EJ" firstAttribute="top" secondItem="nPf-w9-5eW" secondAttribute="top" constant="40" id="Fad-2c-vx5">
                                 <variation key="heightClass=compact-widthClass=compact" constant="20"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="20"/>
                             </constraint>
                             <constraint firstItem="QBq-iK-6Xn" firstAttribute="centerY" secondItem="co8-8T-CU3" secondAttribute="centerY" id="PTC-Ey-QHz"/>
+                            <constraint firstItem="5Qb-jE-xw0" firstAttribute="centerX" secondItem="co8-8T-CU3" secondAttribute="centerX" id="k9e-o0-Q2v"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nPf-w9-5eW"/>
                     </view>
@@ -326,7 +371,7 @@
             <objects>
                 <viewController id="aQ5-3g-HOc" customClass="GameViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GBx-1N-ezr">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Q2F-XV-BQG"/>
@@ -341,6 +386,7 @@
         <image name="aboutButton.png" width="200" height="127"/>
         <image name="aboutText.png" width="900" height="900"/>
         <image name="buyFullVersionButton.png" width="150" height="150"/>
+        <image name="header-text.png" width="417" height="188"/>
         <image name="homeButton.png" width="150" height="150"/>
         <image name="optionsButton.png" width="200" height="127"/>
         <image name="playButton.png" width="200" height="128"/>
