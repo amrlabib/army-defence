@@ -36,7 +36,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setBackground];
+    
+    UIView* background = [ViewsUtil getViewBackgroundFromLaunchScreen:self.view];
+    [self.view addSubview: background];
+    [self.view sendSubviewToBack: background];
+    
     [self initMenu];
 }
 
@@ -60,21 +64,5 @@
     soundObject = [[soundEffectsHandler alloc] init : soundEnabled : musicEnabled];
     [soundObject playMySoundFile:@"gameMusic"];
 }
-
--(void) setBackground
-{
-    CGRect screenBounds = [[UIScreen mainScreen] bounds];
-    
-    int width = screenBounds.size.width;
-    int height = screenBounds.size.height;
-    
-    UIStoryboard *menu = [UIStoryboard storyboardWithName: @"LaunchScreen" bundle:nil];
-    UIViewController *menuViewController = [menu instantiateViewControllerWithIdentifier: @"backgroundStoryBoard"];
-    menuViewController.view.frame = CGRectMake(0, 0, width, height);
-    
-    [self.view addSubview: menuViewController.view];
-    [self.view sendSubviewToBack:menuViewController.view];
-}
-
 
 @end

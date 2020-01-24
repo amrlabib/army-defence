@@ -10,6 +10,7 @@
 #import "savedText.h"
 #import "InAppPurchaseController.h"
 #import "GameViewController.h"
+#import "ViewsUtil.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

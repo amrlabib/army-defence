@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "savedText.h"
 #import "soundEffectsHandler.h"
+#import "ViewsUtil.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -19,7 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    UIColor* backgroundColor = [ViewsUtil getGreenBackground:self.view];
+    self.view.backgroundColor = backgroundColor;
 }
 
 

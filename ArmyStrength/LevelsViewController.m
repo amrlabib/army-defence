@@ -19,6 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UIColor* backgroundColor = [ViewsUtil getGreenBackground:self.view];
+    self.view.backgroundColor = backgroundColor;
     [self initLevels];
 }
 
