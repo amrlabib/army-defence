@@ -14,6 +14,8 @@
 
 @implementation GameViewController
 
+@synthesize updateLevelDelegate;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initGame];
@@ -26,12 +28,14 @@
     windowBounds.width  =  screenBounds.size.width;
     windowBounds.height = screenBounds.size.height;
         
-    savedTextRef = [[savedText alloc] init];
-    
-    currentGame = [[gameObject alloc] init: self.view :  windowBounds : savedTextRef  : _soundRef];
+    currentGame = [[gameObject alloc] init: self.view :  windowBounds : _savedTextRef  : _soundRef];
     [currentGame setGameObjectDelegate: self];
     [currentGame initializeAttributes : _levelNumber];
     [self.view addSubview: currentGame];
+}
+
+-(void) updateLevelButton : (int) l {
+    [[self updateLevelDelegate] updateLevelButton:l];
 }
 
 

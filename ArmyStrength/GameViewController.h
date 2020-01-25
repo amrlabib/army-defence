@@ -11,14 +11,24 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface GameViewController : UIViewController
+@protocol levelObjectDelegateFunctions <NSObject>
+@required
+-(void) updateLevelButton : (int) l;
+@end
+
+
+@interface GameViewController : UIViewController <UIApplicationDelegate>
 {
     gameObject *currentGame;
-    savedText *savedTextRef;
 }
 
 @property (nonatomic, strong) soundEffectsHandler *soundRef;
+@property (nonatomic, strong) savedText *savedTextRef;
 @property int levelNumber;
+
+@property  (retain) id updateLevelDelegate;
+
+-(void) updateLevelButton : (int) l;
 
 @end
 

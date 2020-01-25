@@ -249,13 +249,16 @@
 {
     // since we have backButton !!
     int levelStatus = [savedTextRef  getLevelValue:l];
-    [(UIButton*)[self.view subviews][l+1] setImage: [self mergeImages: [[[NSString alloc] initWithFormat:@"%d" , l ] autorelease] : levelStatus] forState:UIControlStateNormal ];
+    
+    int currentLevelIndex = l + 2;
+    int nextLevelIndex = l + 3;
+    [(UIButton*)[self.view subviews][currentLevelIndex] setImage: [self mergeImages: [[[NSString alloc] initWithFormat:@"%d" , l ] autorelease] : levelStatus] forState:UIControlStateNormal ];
     
     if(l < 24)
     {
         levelStatus = [savedTextRef  getLevelValue:l+1];
-        [(UIButton*)[self.view subviews][l+2] setImage: [self mergeImages: [[[NSString alloc] initWithFormat:@"%d" , l+1 ] autorelease ]: levelStatus] forState:UIControlStateNormal ];
-        [(UIButton*)[self.view subviews][l+2] setUserInteractionEnabled:true];
+        [(UIButton*)[self.view subviews][nextLevelIndex] setImage: [self mergeImages: [[[NSString alloc] initWithFormat:@"%d" , l+1 ] autorelease ]: levelStatus] forState:UIControlStateNormal ];
+        [(UIButton*)[self.view subviews][nextLevelIndex] setUserInteractionEnabled:true];
     }
     
 }
@@ -281,6 +284,8 @@
         GameViewController *newGameViewController = [[GameViewController alloc] init];
         newGameViewController.levelNumber = buttonNumber;
         newGameViewController.soundRef = _soundRef;
+        newGameViewController.savedTextRef = savedTextRef;
+        [newGameViewController setUpdateLevelDelegate: self];
         [[self navigationController] pushViewController:newGameViewController animated:true];
     
         // [currentGame addGameView];

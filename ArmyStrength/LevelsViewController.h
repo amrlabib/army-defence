@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) soundEffectsHandler *soundRef;
 
 -(id) initLevels;
--(void) addButtons ;
+-(void) addButtons;
 -(UIImage*) mergeImages : (NSString*) num : (int) levelStatus;
 -(void) addSingleButton : (int) i : (int) j;
 -(void) updateLevelButton : (int) l;

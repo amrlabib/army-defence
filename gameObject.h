@@ -33,7 +33,7 @@
 
 
 
-@interface gameObject : UIView <UIApplicationDelegate, delegateFunctions >
+@interface gameObject : UIView <UIApplicationDelegate, delegateFunctions>
 {
     CGSize currentWindowBounds;
     CGSize currentWindowBoundsFull;
@@ -106,7 +106,7 @@
     
     
     
-    id <gameObjectDelegateFunctions> gameObjectDelegate;
+    // id <gameObjectDelegateFunctions> gameObjectDelegate;
     
     
     

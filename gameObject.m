@@ -633,7 +633,7 @@
     [gameTimer invalidate ];
     gameTimer = NULL;
     [savedTextRef updateLevel:level.levelNumber :difficulty];
-    // [[self gameObjectDelegate] updateLevelButton : level.levelNumber ];
+    [[self gameObjectDelegate] updateLevelButton : level.levelNumber];
     
     
     popUpMessages *vMessage = [[popUpMessages alloc] init:viewReference :currentWindowBoundsFull :@"victoryImage.png" : difficulty :soundEffectsObject];
