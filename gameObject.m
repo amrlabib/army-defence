@@ -250,7 +250,7 @@
 }
 -(void) levelsButtonHandler
 {
-    [gameTimer invalidate ];
+    [gameTimer invalidate];
     gameTimer = NULL;
     
     [soundEffectsObject playMySoundFile:@"gameMusic"];
@@ -263,12 +263,8 @@
 
 -(void) addGameBackground
 {
-    NSString *imageName =  [[NSString alloc] initWithString: [self isIpad] ? @"ipad-game-bg.jpg" : @"iphone-7-plus-game-bg.jpg"];
-    UIColor *background = [self getScaledUIColorImage:[UIImage imageNamed:imageName]];
-    
-    viewReference.backgroundColor = background;
-    
-    [background release];
+    UIColor* backgroundColor = [ViewsUtil getGreenBackground:viewReference];
+    viewReference.backgroundColor = backgroundColor;
 }
 
 -(UIColor*) getScaledUIColorImage: (UIImage*) targetImage

@@ -23,6 +23,7 @@
 #import "soundEffectsHandler.h" 
 #import "BombView.h"
 #import "tutorialClass.h"
+#import "ViewsUtil.h"
 
 
 @protocol gameObjectDelegateFunctions <NSObject>

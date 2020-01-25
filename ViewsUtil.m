@@ -27,7 +27,7 @@
 }
 
 + (UIColor *) getGreenBackground: (UIView *)targetView {
-    NSString *greenBackground =  [[NSString alloc] initWithString: [ViewsUtil isIpad] ? @"ipad-game-bg.jpg" : @"iphone-7-plus-game-bg.jpg"];
+    NSString *greenBackground =  [[NSString alloc] initWithString: @"ipad-game-bg.jpg"];
     UIColor *background = [ViewsUtil getScaledUIColorImage:[UIImage imageNamed:greenBackground] : targetView];
     return background;
 }
@@ -41,9 +41,6 @@
     UIStoryboard *menu = [UIStoryboard storyboardWithName: @"LaunchScreen" bundle:nil];
     UIViewController *menuViewController = [menu instantiateViewControllerWithIdentifier: @"backgroundStoryBoard"];
     menuViewController.view.frame = CGRectMake(0, 0, width, height);
-    menuViewController.view.backgroundColor = [ViewsUtil getGreenBackground:targetView];
-    
-
     return menuViewController.view;
 }
 

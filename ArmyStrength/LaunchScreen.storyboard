@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina5_9" orientation="landscape" appearance="light"/>
+    <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -13,11 +13,14 @@
             <objects>
                 <viewController storyboardIdentifier="backgroundStoryBoard" id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ipad-game-bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NaO-Ur-QRo">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-manShooter.png" translatesAutoresizingMaskIntoConstraints="NO" id="bdZ-dx-BfL">
-                                <rect key="frame" x="346" y="234" width="120" height="120"/>
+                                <rect key="frame" x="501.5" y="648" width="363" height="326"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="363" id="5zg-e6-Ccf">
                                         <variation key="heightClass=compact-widthClass=compact" constant="120"/>
@@ -30,7 +33,7 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-electric.png" translatesAutoresizingMaskIntoConstraints="NO" id="6ro-xB-65C">
-                                <rect key="frame" x="648" y="127.66666666666669" width="120" height="120"/>
+                                <rect key="frame" x="1056" y="381" width="260" height="262"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="262" id="Fx5-4S-bul">
                                         <variation key="heightClass=compact-widthClass=compact" constant="120"/>
@@ -43,7 +46,7 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-plane.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZSy-on-rGo">
-                                <rect key="frame" x="558" y="0.0" width="140" height="150"/>
+                                <rect key="frame" x="934" y="70" width="432" height="312"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="312" id="hip-8X-SFL">
                                         <variation key="heightClass=compact-widthClass=compact" constant="150"/>
@@ -56,7 +59,7 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-apache.png" translatesAutoresizingMaskIntoConstraints="NO" id="bsp-BM-zka">
-                                <rect key="frame" x="104" y="10" width="120" height="140"/>
+                                <rect key="frame" x="67" y="30" width="319" height="340"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="340" id="Qtk-7W-P9Y">
                                         <variation key="heightClass=compact-widthClass=compact" constant="140"/>
@@ -69,7 +72,7 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-strongElectric.png" translatesAutoresizingMaskIntoConstraints="NO" id="aEL-pi-Tj1">
-                                <rect key="frame" x="44" y="127.66666666666669" width="120" height="120"/>
+                                <rect key="frame" x="50" y="379.5" width="265" height="265"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="265" id="FSo-rI-UHO">
                                         <variation key="heightClass=compact-widthClass=compact" constant="120"/>
@@ -80,10 +83,9 @@
                                         <variation key="heightClass=compact-widthClass=regular" constant="120"/>
                                     </constraint>
                                 </constraints>
-                                <viewLayoutGuide key="safeArea" id="2P5-vc-8oH"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-starShooter.png" translatesAutoresizingMaskIntoConstraints="NO" id="wTi-84-4gn">
-                                <rect key="frame" x="144" y="234" width="120" height="120"/>
+                                <rect key="frame" x="100" y="670" width="416" height="284"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="284" id="lpz-uk-1mi">
                                         <variation key="heightClass=compact-widthClass=compact" constant="120"/>
@@ -96,7 +98,7 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg-singleArmShooter.png" translatesAutoresizingMaskIntoConstraints="NO" id="jlo-HT-nfe">
-                                <rect key="frame" x="528" y="234" width="120" height="120"/>
+                                <rect key="frame" x="870" y="664" width="346" height="290"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="346" id="724-Dd-9o3">
                                         <variation key="heightClass=compact-widthClass=compact" constant="120"/>
@@ -109,7 +111,7 @@
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="header-text.png" translatesAutoresizingMaskIntoConstraints="NO" id="Aqa-bv-8ZM">
-                                <rect key="frame" x="290" y="0.0" width="232" height="80"/>
+                                <rect key="frame" x="451" y="0.0" width="464" height="210"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="210" id="cZp-SJ-g3I">
                                         <variation key="heightClass=compact-widthClass=compact" constant="80"/>
@@ -122,62 +124,66 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.14509803921568626" green="0.19215686274509802" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Aqa-bv-8ZM" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="0JJ-ak-zO5"/>
-                            <constraint firstItem="bsp-BM-zka" firstAttribute="leading" secondItem="qag-Q2-F48" secondAttribute="leading" constant="67" id="4Vj-DA-gJ0">
+                            <constraint firstItem="NaO-Ur-QRo" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="2x3-p6-wUl"/>
+                            <constraint firstItem="bsp-BM-zka" firstAttribute="leading" secondItem="xwi-oq-FSm" secondAttribute="leading" constant="67" id="4Vj-DA-gJ0">
                                 <variation key="heightClass=compact-widthClass=compact" constant="60"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="60"/>
                             </constraint>
-                            <constraint firstItem="qag-Q2-F48" firstAttribute="bottom" secondItem="bdZ-dx-BfL" secondAttribute="bottom" constant="30" id="8bO-g3-zJJ">
+                            <constraint firstItem="xwi-oq-FSm" firstAttribute="bottom" secondItem="bdZ-dx-BfL" secondAttribute="bottom" constant="30" id="8bO-g3-zJJ">
                                 <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                             </constraint>
-                            <constraint firstItem="qag-Q2-F48" firstAttribute="bottom" secondItem="jlo-HT-nfe" secondAttribute="bottom" constant="50" id="9is-FF-RwE">
+                            <constraint firstItem="xwi-oq-FSm" firstAttribute="bottom" secondItem="jlo-HT-nfe" secondAttribute="bottom" constant="50" id="9is-FF-RwE">
                                 <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                             </constraint>
-                            <constraint firstItem="bdZ-dx-BfL" firstAttribute="centerX" secondItem="qag-Q2-F48" secondAttribute="centerX" id="BfL-kd-kfj"/>
-                            <constraint firstItem="wTi-84-4gn" firstAttribute="leading" secondItem="qag-Q2-F48" secondAttribute="leading" constant="100" id="FCv-LQ-N8z">
+                            <constraint firstItem="bdZ-dx-BfL" firstAttribute="centerX" secondItem="xwi-oq-FSm" secondAttribute="centerX" id="BfL-kd-kfj"/>
+                            <constraint firstItem="NaO-Ur-QRo" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Da7-1s-tPV"/>
+                            <constraint firstItem="wTi-84-4gn" firstAttribute="leading" secondItem="xwi-oq-FSm" secondAttribute="leading" constant="100" id="FCv-LQ-N8z">
                                 <variation key="heightClass=compact-widthClass=compact" constant="100"/>
                             </constraint>
-                            <constraint firstItem="ZSy-on-rGo" firstAttribute="trailing" secondItem="qag-Q2-F48" secondAttribute="trailing" id="Hys-MK-ZnR">
+                            <constraint firstItem="ZSy-on-rGo" firstAttribute="trailing" secondItem="xwi-oq-FSm" secondAttribute="trailing" id="Hys-MK-ZnR">
                                 <variation key="heightClass=compact-widthClass=compact" constant="-70"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="-70"/>
                             </constraint>
-                            <constraint firstItem="qag-Q2-F48" firstAttribute="trailing" secondItem="6ro-xB-65C" secondAttribute="trailing" constant="50" id="MOp-aB-Kot">
+                            <constraint firstItem="xwi-oq-FSm" firstAttribute="trailing" secondItem="6ro-xB-65C" secondAttribute="trailing" constant="50" id="MOp-aB-Kot">
                                 <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                             </constraint>
-                            <constraint firstItem="qag-Q2-F48" firstAttribute="trailing" secondItem="jlo-HT-nfe" secondAttribute="trailing" constant="150" id="N7Y-Rb-62F">
+                            <constraint firstItem="xwi-oq-FSm" firstAttribute="trailing" secondItem="jlo-HT-nfe" secondAttribute="trailing" constant="150" id="N7Y-Rb-62F">
                                 <variation key="heightClass=compact-widthClass=compact" constant="120"/>
                             </constraint>
+                            <constraint firstItem="NaO-Ur-QRo" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailing" id="RpH-OF-uZm"/>
                             <constraint firstItem="aEL-pi-Tj1" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Xei-yT-jDW"/>
-                            <constraint firstItem="ZSy-on-rGo" firstAttribute="top" secondItem="qag-Q2-F48" secondAttribute="top" constant="70" id="ZbO-Qf-sBH">
+                            <constraint firstItem="ZSy-on-rGo" firstAttribute="top" secondItem="xwi-oq-FSm" secondAttribute="top" constant="70" id="ZbO-Qf-sBH">
                                 <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                             </constraint>
-                            <constraint firstItem="bsp-BM-zka" firstAttribute="top" secondItem="qag-Q2-F48" secondAttribute="top" constant="30" id="eQM-BK-Vqb">
+                            <constraint firstItem="bsp-BM-zka" firstAttribute="top" secondItem="xwi-oq-FSm" secondAttribute="top" constant="30" id="eQM-BK-Vqb">
                                 <variation key="heightClass=compact-widthClass=compact" constant="10"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="10"/>
                             </constraint>
-                            <constraint firstItem="aEL-pi-Tj1" firstAttribute="leading" secondItem="qag-Q2-F48" secondAttribute="leading" constant="50" id="gCF-kV-Mdx">
+                            <constraint firstItem="aEL-pi-Tj1" firstAttribute="leading" secondItem="xwi-oq-FSm" secondAttribute="leading" constant="50" id="gCF-kV-Mdx">
                                 <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                             </constraint>
+                            <constraint firstAttribute="bottom" secondItem="NaO-Ur-QRo" secondAttribute="bottom" id="gxl-Rm-fpH"/>
                             <constraint firstItem="6ro-xB-65C" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="peC-mx-ren"/>
-                            <constraint firstItem="Aqa-bv-8ZM" firstAttribute="centerX" secondItem="qag-Q2-F48" secondAttribute="centerX" id="ugZ-5S-92R"/>
-                            <constraint firstItem="qag-Q2-F48" firstAttribute="bottom" secondItem="wTi-84-4gn" secondAttribute="bottom" constant="50" id="wUE-it-bq3">
+                            <constraint firstItem="Aqa-bv-8ZM" firstAttribute="centerX" secondItem="xwi-oq-FSm" secondAttribute="centerX" id="ugZ-5S-92R"/>
+                            <constraint firstItem="xwi-oq-FSm" firstAttribute="bottom" secondItem="wTi-84-4gn" secondAttribute="bottom" constant="50" id="wUE-it-bq3">
                                 <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                             </constraint>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="qag-Q2-F48"/>
+                        <viewLayoutGuide key="safeArea" id="xwi-oq-FSm"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.708638360175691" y="375"/>
+            <point key="canvasLocation" x="51.830161054172763" y="373.828125"/>
         </scene>
     </scenes>
     <resources>
@@ -189,5 +195,6 @@
         <image name="bg-starShooter.png" width="195.60000610351562" height="196.80000305175781"/>
         <image name="bg-strongElectric.png" width="743" height="737"/>
         <image name="header-text.png" width="417" height="188"/>
+        <image name="ipad-game-bg.jpg" width="2048" height="1536"/>
     </resources>
 </document>
