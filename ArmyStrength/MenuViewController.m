@@ -41,7 +41,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIView* background = [ViewsUtil getViewBackgroundFromLaunchScreen:self.view];
+    UIView* background = [ViewsUtil getViewBackgroundFromLaunchScreen];
     [self.view addSubview: background];
     [self.view sendSubviewToBack: background];
     

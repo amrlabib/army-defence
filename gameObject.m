@@ -455,7 +455,7 @@
 
 -(void) ratingFunction
 {
-    if(!rateLater &&   !savedTextRef.armyRated && level.levelNumber %3 == 0)
+    if(!rateLater && !savedTextRef.armyRated && level.levelNumber %3 == 0)
     {
         if(gameTimer == NULL)
             ;

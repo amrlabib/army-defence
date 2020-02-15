@@ -32,15 +32,9 @@
     return background;
 }
 
-+ (UIView *) getViewBackgroundFromLaunchScreen: (UIView *)targetView {
-    CGRect screenBounds = [[UIScreen mainScreen] bounds];
-    
-    int width = screenBounds.size.width;
-    int height = screenBounds.size.height;
-    
++ (UIView *) getViewBackgroundFromLaunchScreen {
     UIStoryboard *menu = [UIStoryboard storyboardWithName: @"LaunchScreen" bundle:nil];
     UIViewController *menuViewController = [menu instantiateViewControllerWithIdentifier: @"backgroundStoryBoard"];
-    menuViewController.view.frame = CGRectMake(0, 0, width, height);
     return menuViewController.view;
 }
 

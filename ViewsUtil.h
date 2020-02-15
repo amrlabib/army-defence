@@ -12,9 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ViewsUtil : NSObject
 + (bool)isIpad;
-+ (UIColor*) getScaledUIColorImage: (UIImage*) targetImage: (UIView *)targetView;
++ (UIColor*) getScaledUIColorImage: (UIImage*)targetImage : (UIView *)targetView;
 + (UIColor *) getGreenBackground: (UIView *)targetView;
-+ (UIView*) getViewBackgroundFromLaunchScreen: (UIView *)targetView;
++ (UIView*) getViewBackgroundFromLaunchScreen;
 @end
 
 NS_ASSUME_NONNULL_END
