@@ -21,7 +21,7 @@
     
     CGSize blockSize;
     double rows , cols;
-    int xStart , yStart;
+    // int xStart , yStart;
     
     
     NSMutableArray *endBlocksShapes;
@@ -37,7 +37,7 @@
 @property (nonatomic , retain) NSMutableArray *board ,*bombBoard , *endBlocksShapes;
 
 
--(id) init : (UIView*) ref : (int) screenWidth : (int) screenHeight ;
+-(id) init : (UIView*) ref : (int) screenWidth : (int) screenHeight  : (int) xMargin : (int) yMargin ;
 -(void) drawGatesShapes : (NSMutableArray*) startBlocks : (NSMutableArray*) endBlocks ;
 -(void) addWideLines :(int) screenWidth;
 -(bool) addShooterObject : (int) iIndex : (int) jIndex : (NSString*) shooterName;

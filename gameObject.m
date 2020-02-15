@@ -8,7 +8,6 @@
 
 #import "gameObject.h"
 
-#import "levelsCanvas.h"
 
 @implementation gameObject
 
@@ -17,7 +16,7 @@
 
 -(id) init :(UIView*) vRef :  (CGSize) screenSize : (savedText*) savedText : (soundEffectsHandler*) sound
 {
-    
+    [self setSafeAreaValues];
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(pauseTheTimer)
                                                  name:UIApplicationWillResignActiveNotification
@@ -25,7 +24,8 @@
     
     viewReference = vRef;
     savedTextRef = savedText;
-    currentWindowBounds = screenSize;
+    currentWindowBoundsFull = CGSizeMake(screenSize.width, screenSize.height);
+    currentWindowBounds = CGSizeMake(screenSize.width - (leftSafeArea + rightSafeaArea), screenSize.height - (bottomSafeArea + topSafeArea));
     
     
     rateLater = false;
@@ -33,15 +33,25 @@
     
     soundEffectsObject = sound;
     
-    self = [super initWithFrame:CGRectMake(0, 0, currentWindowBounds.width, currentWindowBounds.height)];
+    self = [super initWithFrame:CGRectMake(leftSafeArea, topSafeArea, currentWindowBounds.width, currentWindowBounds.height)];
     
     return self;
 }
--(void) addGameView
-{
-    [viewReference addSubview:self];
 
+-(void) setSafeAreaValues {
+    leftSafeArea = 0;
+    rightSafeaArea = 0;
+    topSafeArea = 0;
+    bottomSafeArea = 0;
+    if (@available(iOS 11.0, *)) {
+        UIWindow *window = UIApplication.sharedApplication.keyWindow;
+        bottomSafeArea =  window.safeAreaInsets.bottom;
+        topSafeArea = window.safeAreaInsets.top;
+        rightSafeaArea = window.safeAreaInsets.right;
+        leftSafeArea = window.safeAreaInsets.left;
+    }
 }
+
 -(void) pauseTheTimer
 {
     if(gameTimer!=NULL)
@@ -83,7 +93,7 @@
     
     
     
-    boardObject = [[gameBoard alloc] init: self :currentWindowBounds.width : currentWindowBounds.height ];
+    boardObject = [[gameBoard alloc] init: self :currentWindowBounds.width : currentWindowBounds.height: 0 : 0];
     level = [[levelAttr alloc] init : l : boardObject.rows : boardObject.cols];
     
     [boardObject drawGatesShapes:level.startBlocks :level.endBlocks];
@@ -240,29 +250,42 @@
 }
 -(void) levelsButtonHandler
 {
-    [gameTimer invalidate ];
+    [gameTimer invalidate];
     gameTimer = NULL;
     
     [soundEffectsObject playMySoundFile:@"gameMusic"];
     [self releaseOjects];
-    [self removeFromSuperview];
+    [[[self gameObjectDelegate] navigationController] popViewControllerAnimated:true];
+    
+    // [self removeFromSuperview];
 }
 
 
 -(void) addGameBackground
 {
-    if(currentWindowBounds.width == 1024)
-        gameBackground = [[DrawableObject alloc] init: self :0 :0 :currentWindowBounds :@"ipad-game-bg.jpg"];
-    else if(currentWindowBounds.width == 480)
-        gameBackground = [[DrawableObject alloc] init: self :0 :0 :currentWindowBounds :@"iphone-4s-game-bg.jpg"];
-    else if(currentWindowBounds.width == 568)
-        gameBackground = [[DrawableObject alloc] init: self :0 :0 :currentWindowBounds :@"iphone-SE-game-bg.jpg"];
-    else if (currentWindowBounds.width == 667)
-        gameBackground = [[DrawableObject alloc] init: self :0 :0 :currentWindowBounds :@"iphone-7-game-bg.jpg"];
-    else //if (currentWindowBounds.width == 736)
-        gameBackground = [[DrawableObject alloc] init: self :0 :0 :currentWindowBounds :@"iphone-7-plus-game-bg.jpg"];
-
+    UIColor* backgroundColor = [ViewsUtil getGreenBackground:viewReference];
+    viewReference.backgroundColor = backgroundColor;
 }
+
+-(UIColor*) getScaledUIColorImage: (UIImage*) targetImage
+{
+    UIGraphicsBeginImageContextWithOptions(viewReference.frame.size, NO, 0.f);
+    [targetImage drawInRect:CGRectMake(0.f, 0.f, viewReference.frame.size.width, viewReference.frame.size.height)];
+    UIImage * resultImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return  [[UIColor alloc] initWithPatternImage: resultImage];
+}
+
+- (bool)isIpad
+{
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        return true;
+    }
+    return false;
+}
+
+
 -(void) addShooterWeaponsImages
 {
     CGSize weaponImageSize;
@@ -419,13 +442,20 @@
     
 }
 
-
-
-
+-(void) rateApp
+{
+    if (@available(iOS 10.3, *)) {
+        [SKStoreReviewController requestReview];
+    } else {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://appstore.com/armydefencefree"]];
+    }
+    
+    [savedTextRef updateArmyRated:true];
+}
 
 -(void) ratingFunction
 {
-    if(!rateLater &&   !savedTextRef.armyRated && level.levelNumber %3 == 0)
+    if(!rateLater && !savedTextRef.armyRated && level.levelNumber %3 == 0)
     {
         if(gameTimer == NULL)
             ;
@@ -437,27 +467,10 @@
             pausedDueToPopUpMessage = true;
         }
         
-        
-        
-        popUpMessages *vMessage = [[popUpMessages alloc] init:self :currentWindowBounds :@"rateUsImage.png" : -3 : soundEffectsObject];
-        [vMessage setDelegate:self];
-        [vMessage addMessage];
+        [self rateApp];
         popUpMessageActivated= true;
     }
 }
--(void) handleGameRateSubmitted : (bool) value
-{
-    if(value)
-    {
-        [savedTextRef updateArmyRated:true];
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://appstore.com/armydefencefree"]];
-    }
-    else
-    {
-        rateLater = true;
-    }
-}
-
 
 
 -(void) initGameTimer
@@ -592,7 +605,7 @@
     [gameTimer invalidate ];
     gameTimer = NULL;
     
-    popUpMessages *vMessage = [[popUpMessages alloc] init:self :currentWindowBounds :@"defeatedImage.png" : 0 : soundEffectsObject];
+    popUpMessages *vMessage = [[popUpMessages alloc] init:viewReference :currentWindowBoundsFull :@"defeatedImage.png" : 0 : soundEffectsObject];
     [vMessage setDelegate:self];
     [vMessage addMessage];
     popUpMessageActivated= true;
@@ -606,10 +619,10 @@
     [gameTimer invalidate ];
     gameTimer = NULL;
     [savedTextRef updateLevel:level.levelNumber :difficulty];
-    [[self gameObjectDelegate] updateLevelButton : level.levelNumber ];
+    [[self gameObjectDelegate] updateLevelButton : level.levelNumber];
     
     
-    popUpMessages *vMessage = [[popUpMessages alloc] init:self :currentWindowBounds :@"victoryImage.png" : difficulty :soundEffectsObject];
+    popUpMessages *vMessage = [[popUpMessages alloc] init:viewReference :currentWindowBoundsFull :@"victoryImage.png" : difficulty :soundEffectsObject];
     [vMessage setDelegate:self];
     [vMessage addMessage];
     popUpMessageActivated = true;
@@ -1234,7 +1247,7 @@
     if(weaponPressed && !popUpMessageActivated )
     {
         
-        int j = (int)((int)location.x / (int)boardObject.blockSize.width);
+        int j = (int)(((int)location.x - boardObject.xStart)/ (int)boardObject.blockSize.width);
         int i = (int)((int)location.y / (int)boardObject.blockSize.height);
         
         if(i >= 0 && i <= boardObject.rows-1 && j>=0 && j<= boardObject.cols-1)
@@ -1264,7 +1277,7 @@
     {
         touchMoveImage.frame = CGRectMake(-200, -200, boardObject.blockSize.width, boardObject.blockSize.height);
         
-        int j = (int)((int)location.x / (int)boardObject.blockSize.width);
+        int j = (int)(((int)location.x - boardObject.xStart) / (int)boardObject.blockSize.width);
         int i = (int)((int)location.y / (int)boardObject.blockSize.height);
         
         if(i >= 0 && i <= boardObject.rows-1 && j>=0 && j<= boardObject.cols-1)
@@ -1414,7 +1427,7 @@
         }
         else if((UIButton*)sender == homeButton )
         {
-            if(level.levelNumber ==1 )
+            if(level.levelNumber == 1)
             {
                 [tutorialObject pause];
 
@@ -1427,14 +1440,14 @@
                 ;
             else
             {
-                [gameTimer invalidate ];
+                [gameTimer invalidate];
                 gameTimer = NULL;
                 [soundEffectsObject stopLoopingSounds];
                 pausedDueToPopUpMessage = true;
             }
             
             
-            popUpMessages *vMessage = [[popUpMessages alloc] init:self :currentWindowBounds :@"confirmationImage.png" : -1 : soundEffectsObject];
+            popUpMessages *vMessage = [[popUpMessages alloc] init:viewReference :currentWindowBoundsFull :@"confirmationImage.png" : -1 : soundEffectsObject];
             [vMessage setDelegate:self];
             [vMessage addMessage];
             popUpMessageActivated= true;
@@ -1462,7 +1475,7 @@
                 pausedDueToPopUpMessage = true;
             }
             
-            popUpMessages *vMessage = [[popUpMessages alloc] init:self :currentWindowBounds :@"confirmationImage.png" : -2 : soundEffectsObject];
+            popUpMessages *vMessage = [[popUpMessages alloc] init:viewReference :currentWindowBoundsFull :@"confirmationImage.png" : -2 : soundEffectsObject];
             [vMessage setDelegate:self];
             [vMessage addMessage];
             popUpMessageActivated= true;

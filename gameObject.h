@@ -23,6 +23,8 @@
 #import "soundEffectsHandler.h" 
 #import "BombView.h"
 #import "tutorialClass.h"
+#import "ViewsUtil.h"
+#import <StoreKit/StoreKit.h>
 
 
 @protocol gameObjectDelegateFunctions <NSObject>
@@ -33,9 +35,10 @@
 
 
 
-@interface gameObject : UIView <UIApplicationDelegate, delegateFunctions >
+@interface gameObject : UIView <UIApplicationDelegate, delegateFunctions>
 {
     CGSize currentWindowBounds;
+    CGSize currentWindowBoundsFull;
     NSTimer *gameTimer;
     gameBoard *boardObject;
     
@@ -105,7 +108,7 @@
     
     
     
-    id <gameObjectDelegateFunctions> gameObjectDelegate;
+    // id <gameObjectDelegateFunctions> gameObjectDelegate;
     
     
     
@@ -133,6 +136,11 @@
     
     
     bool rateLater;
+    
+    int bottomSafeArea;
+    int topSafeArea;
+    int rightSafeaArea;
+    int leftSafeArea;
 }
 
 @property  (retain) id gameObjectDelegate;
@@ -168,7 +176,7 @@
 -(void) setCurrentPressedWeapon : (UITouch*) touch : (CGPoint) location;
 -(void) setAddShootersRangeCircle : (CGPoint) location;
 
-
+-(void) setSafeAreaValues;
 
 
 @end
