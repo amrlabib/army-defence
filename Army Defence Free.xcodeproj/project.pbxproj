@@ -49,18 +49,14 @@
 		5E96F4131DE88EB000B761A6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E96F4121DE88EB000B761A6 /* SystemConfiguration.framework */; };
 		5E96F4311DEA296A00B761A6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E96F4301DEA296A00B761A6 /* Images.xcassets */; };
 		5EB3618323C255F000D13482 /* blackTouchMoveImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB360FA23C255DE00D13482 /* blackTouchMoveImage.png */; };
-		5EB3618423C255F000D13482 /* iphone-4s-landscape.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EB360FB23C255DF00D13482 /* iphone-4s-landscape.jpg */; };
 		5EB3618523C255F000D13482 /* plane.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB360FC23C255DF00D13482 /* plane.png */; };
 		5EB3618623C255F000D13482 /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB360FD23C255DF00D13482 /* 5.png */; };
 		5EB3618723C255F000D13482 /* manShooterBase.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB360FE23C255DF00D13482 /* manShooterBase.png */; };
 		5EB3618823C255F000D13482 /* manShooterWithMoneyBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB360FF23C255DF00D13482 /* manShooterWithMoneyBlack.png */; };
 		5EB3618923C255F000D13482 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3610023C255DF00D13482 /* 4.png */; };
 		5EB3618A23C255F000D13482 /* entranceShape1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3610123C255DF00D13482 /* entranceShape1.png */; };
-		5EB3618B23C255F000D13482 /* ipad-landscape.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3610223C255DF00D13482 /* ipad-landscape.jpg */; };
 		5EB3618C23C255F000D13482 /* runFastButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3610323C255DF00D13482 /* runFastButton.png */; };
-		5EB3618D23C255F000D13482 /* iphone-7-plus-menu-env.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3610423C255DF00D13482 /* iphone-7-plus-menu-env.jpg */; };
 		5EB3618E23C255F000D13482 /* moreAppsButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3610523C255E000D13482 /* moreAppsButton.png */; };
-		5EB3618F23C255F000D13482 /* iphone-7-plus-landscape.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3610623C255E000D13482 /* iphone-7-plus-landscape.jpg */; };
 		5EB3619023C255F000D13482 /* strongElectricWithMoney.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3610723C255E000D13482 /* strongElectricWithMoney.png */; };
 		5EB3619123C255F000D13482 /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3610823C255E000D13482 /* 8.png */; };
 		5EB3619223C255F000D13482 /* goToLevelsButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3610923C255E000D13482 /* goToLevelsButton.png */; };
@@ -77,11 +73,9 @@
 		5EB3619D23C255F000D13482 /* singleArmWithMoneyBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3611423C255E100D13482 /* singleArmWithMoneyBlack.png */; };
 		5EB3619E23C255F000D13482 /* hand.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3611523C255E100D13482 /* hand.png */; };
 		5EB3619F23C255F000D13482 /* bomb3Invalid.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3611623C255E100D13482 /* bomb3Invalid.png */; };
-		5EB361A023C255F000D13482 /* iphone-4s-menu-env.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3611723C255E200D13482 /* iphone-4s-menu-env.jpg */; };
 		5EB361A123C255F000D13482 /* electricWithMoney.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3611823C255E200D13482 /* electricWithMoney.png */; };
 		5EB361A223C255F000D13482 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3611923C255E200D13482 /* 1.png */; };
 		5EB361A323C255F000D13482 /* explosion4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3611A23C255E200D13482 /* explosion4.png */; };
-		5EB361A423C255F000D13482 /* iphone-7-landscape.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3611B23C255E200D13482 /* iphone-7-landscape.jpg */; };
 		5EB361A523C255F000D13482 /* strongElectricShooter.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3611C23C255E200D13482 /* strongElectricShooter.png */; };
 		5EB361A623C255F000D13482 /* homeButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3611D23C255E200D13482 /* homeButton.png */; };
 		5EB361A723C255F000D13482 /* playButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3611E23C255E300D13482 /* playButton.png */; };
@@ -89,11 +83,9 @@
 		5EB361A923C255F000D13482 /* bullet1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3612023C255E300D13482 /* bullet1.png */; };
 		5EB361AA23C255F000D13482 /* redTouchMoveImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3612123C255E300D13482 /* redTouchMoveImage.png */; };
 		5EB361AB23C255F000D13482 /* gridCells.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3612223C255E300D13482 /* gridCells.png */; };
-		5EB361AC23C255F000D13482 /* iphone-7-menu-env.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3612323C255E300D13482 /* iphone-7-menu-env.jpg */; };
 		5EB361AD23C255F000D13482 /* menuAnimationImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3612423C255E300D13482 /* menuAnimationImage.png */; };
 		5EB361AE23C255F000D13482 /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3612523C255E300D13482 /* 9.png */; };
 		5EB361AF23C255F000D13482 /* runFastButton2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3612623C255E400D13482 /* runFastButton2.png */; };
-		5EB361B023C255F000D13482 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3612723C255E400D13482 /* Default-Landscape~ipad.png */; };
 		5EB361B123C255F000D13482 /* musicImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3612823C255E400D13482 /* musicImage.png */; };
 		5EB361B223C255F000D13482 /* bullet2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3612923C255E400D13482 /* bullet2.png */; };
 		5EB361B323C255F000D13482 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3612A23C255E400D13482 /* 2.png */; };
@@ -102,7 +94,6 @@
 		5EB361B623C255F000D13482 /* wideLine.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3612D23C255E400D13482 /* wideLine.png */; };
 		5EB361B723C255F000D13482 /* bomb2Valid.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3612E23C255E500D13482 /* bomb2Valid.png */; };
 		5EB361B823C255F000D13482 /* exitShape0.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3612F23C255E500D13482 /* exitShape0.png */; };
-		5EB361B923C255F000D13482 /* iphone-SE-landscape.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3613023C255E500D13482 /* iphone-SE-landscape.jpg */; };
 		5EB361BA23C255F000D13482 /* manShooterWithMoney.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3613123C255E500D13482 /* manShooterWithMoney.png */; };
 		5EB361BB23C255F000D13482 /* bombsButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3613223C255E500D13482 /* bombsButton.png */; };
 		5EB361BC23C255F000D13482 /* dollar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3613323C255E500D13482 /* dollar.png */; };
@@ -118,7 +109,6 @@
 		5EB361C623C255F000D13482 /* buyFullVersionButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3613D23C255E600D13482 /* buyFullVersionButton.png */; };
 		5EB361C723C255F000D13482 /* rateButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3613E23C255E700D13482 /* rateButton.png */; };
 		5EB361C823C255F000D13482 /* electricShooter.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3613F23C255E700D13482 /* electricShooter.png */; };
-		5EB361C923C255F000D13482 /* iphone-SE-game-bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3614023C255E700D13482 /* iphone-SE-game-bg.jpg */; };
 		5EB361CA23C255F000D13482 /* bomb4Valid.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3614123C255E700D13482 /* bomb4Valid.png */; };
 		5EB361CB23C255F000D13482 /* starShooterGun.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3614223C255E700D13482 /* starShooterGun.png */; };
 		5EB361CC23C255F000D13482 /* bomb3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3614323C255E700D13482 /* bomb3.png */; };
@@ -133,7 +123,6 @@
 		5EB361D523C255F000D13482 /* bomb4.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3614C23C255E800D13482 /* bomb4.png */; };
 		5EB361D623C255F000D13482 /* exitShape3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3614D23C255E800D13482 /* exitShape3.png */; };
 		5EB361D723C255F000D13482 /* bomb1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3614E23C255E900D13482 /* bomb1.png */; };
-		5EB361D823C255F000D13482 /* iphone-4s-game-bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3614F23C255E900D13482 /* iphone-4s-game-bg.jpg */; };
 		5EB361D923C255F000D13482 /* explosion2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3615023C255E900D13482 /* explosion2.png */; };
 		5EB361DA23C255F000D13482 /* handNoHand.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3615123C255E900D13482 /* handNoHand.png */; };
 		5EB361DB23C255F000D13482 /* entranceShape0.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3615223C255E900D13482 /* entranceShape0.png */; };
@@ -141,12 +130,10 @@
 		5EB361DD23C255F000D13482 /* apache2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3615423C255E900D13482 /* apache2.png */; };
 		5EB361DE23C255F000D13482 /* restoreButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3615523C255E900D13482 /* restoreButton.png */; };
 		5EB361DF23C255F000D13482 /* bomb4Invalid.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3615623C255EA00D13482 /* bomb4Invalid.png */; };
-		5EB361E023C255F000D13482 /* iphone-SE-menu-env.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3615723C255EA00D13482 /* iphone-SE-menu-env.jpg */; };
 		5EB361E123C255F000D13482 /* aboutText.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3615823C255EA00D13482 /* aboutText.png */; };
 		5EB361E223C255F000D13482 /* optionsButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3615923C255EA00D13482 /* optionsButton.png */; };
 		5EB361E323C255F000D13482 /* starWithMoneyBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3615A23C255EA00D13482 /* starWithMoneyBlack.png */; };
 		5EB361E423C255F000D13482 /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3615B23C255EB00D13482 /* backButton.png */; };
-		5EB361E523C255F000D13482 /* iphone-7-plus-game-bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3615C23C255EB00D13482 /* iphone-7-plus-game-bg.jpg */; };
 		5EB361E623C255F000D13482 /* defeatedImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3615D23C255EB00D13482 /* defeatedImage.png */; };
 		5EB361E723C255F000D13482 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3615E23C255EB00D13482 /* star.png */; };
 		5EB361E823C255F000D13482 /* singleArmShooterBase.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3615F23C255EB00D13482 /* singleArmShooterBase.png */; };
@@ -168,14 +155,11 @@
 		5EB361F823C255F000D13482 /* singleArmShooter.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3616F23C255ED00D13482 /* singleArmShooter.png */; };
 		5EB361F923C255F000D13482 /* newHummer.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3617023C255ED00D13482 /* newHummer.png */; };
 		5EB361FA23C255F000D13482 /* singleArmWithMoney.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3617123C255EE00D13482 /* singleArmWithMoney.png */; };
-		5EB361FB23C255F000D13482 /* ipad-menu-env.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3617223C255EE00D13482 /* ipad-menu-env.jpg */; };
 		5EB361FC23C255F000D13482 /* singleArmShooterGun.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3617323C255EE00D13482 /* singleArmShooterGun.png */; };
 		5EB361FD23C255F000D13482 /* okButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3617423C255EE00D13482 /* okButton.png */; };
-		5EB361FE23C255F000D13482 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3617523C255EE00D13482 /* Default@2x.png */; };
 		5EB361FF23C255F000D13482 /* soundImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3617623C255EE00D13482 /* soundImage.png */; };
 		5EB3620023C255F000D13482 /* tank.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3617723C255EE00D13482 /* tank.png */; };
 		5EB3620123C255F000D13482 /* life.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3617823C255EE00D13482 /* life.png */; };
-		5EB3620223C255F000D13482 /* iphone-7-game-bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3617923C255EF00D13482 /* iphone-7-game-bg.jpg */; };
 		5EB3620323C255F000D13482 /* rangeCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3617A23C255EF00D13482 /* rangeCircle.png */; };
 		5EB3620423C255F000D13482 /* bomb2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3617B23C255EF00D13482 /* bomb2.png */; };
 		5EB3620523C255F000D13482 /* electricWithMoneyBlack.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3617C23C255EF00D13482 /* electricWithMoneyBlack.png */; };
@@ -295,18 +279,14 @@
 		5E96F4121DE88EB000B761A6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5E96F4301DEA296A00B761A6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "Army Defence Free/Images.xcassets"; sourceTree = "<group>"; };
 		5EB360FA23C255DE00D13482 /* blackTouchMoveImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blackTouchMoveImage.png; path = images/blackTouchMoveImage.png; sourceTree = "<group>"; };
-		5EB360FB23C255DF00D13482 /* iphone-4s-landscape.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "iphone-4s-landscape.jpg"; path = "images/iphone-4s-landscape.jpg"; sourceTree = "<group>"; };
 		5EB360FC23C255DF00D13482 /* plane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plane.png; path = images/plane.png; sourceTree = "<group>"; };
 		5EB360FD23C255DF00D13482 /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 5.png; path = images/5.png; sourceTree = "<group>"; };
 		5EB360FE23C255DF00D13482 /* manShooterBase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = manShooterBase.png; path = images/manShooterBase.png; sourceTree = "<group>"; };
 		5EB360FF23C255DF00D13482 /* manShooterWithMoneyBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = manShooterWithMoneyBlack.png; path = images/manShooterWithMoneyBlack.png; sourceTree = "<group>"; };
 		5EB3610023C255DF00D13482 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 4.png; path = images/4.png; sourceTree = "<group>"; };
 		5EB3610123C255DF00D13482 /* entranceShape1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = entranceShape1.png; path = images/entranceShape1.png; sourceTree = "<group>"; };
-		5EB3610223C255DF00D13482 /* ipad-landscape.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ipad-landscape.jpg"; path = "images/ipad-landscape.jpg"; sourceTree = "<group>"; };
 		5EB3610323C255DF00D13482 /* runFastButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = runFastButton.png; path = images/runFastButton.png; sourceTree = "<group>"; };
-		5EB3610423C255DF00D13482 /* iphone-7-plus-menu-env.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "iphone-7-plus-menu-env.jpg"; path = "images/iphone-7-plus-menu-env.jpg"; sourceTree = "<group>"; };
 		5EB3610523C255E000D13482 /* moreAppsButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = moreAppsButton.png; path = images/moreAppsButton.png; sourceTree = "<group>"; };
-		5EB3610623C255E000D13482 /* iphone-7-plus-landscape.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "iphone-7-plus-landscape.jpg"; path = "images/iphone-7-plus-landscape.jpg"; sourceTree = "<group>"; };
 		5EB3610723C255E000D13482 /* strongElectricWithMoney.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = strongElectricWithMoney.png; path = images/strongElectricWithMoney.png; sourceTree = "<group>"; };
 		5EB3610823C255E000D13482 /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 8.png; path = images/8.png; sourceTree = "<group>"; };
 		5EB3610923C255E000D13482 /* goToLevelsButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = goToLevelsButton.png; path = images/goToLevelsButton.png; sourceTree = "<group>"; };
@@ -323,11 +303,9 @@
 		5EB3611423C255E100D13482 /* singleArmWithMoneyBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = singleArmWithMoneyBlack.png; path = images/singleArmWithMoneyBlack.png; sourceTree = "<group>"; };
 		5EB3611523C255E100D13482 /* hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hand.png; path = images/hand.png; sourceTree = "<group>"; };
 		5EB3611623C255E100D13482 /* bomb3Invalid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bomb3Invalid.png; path = images/bomb3Invalid.png; sourceTree = "<group>"; };
-		5EB3611723C255E200D13482 /* iphone-4s-menu-env.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "iphone-4s-menu-env.jpg"; path = "images/iphone-4s-menu-env.jpg"; sourceTree = "<group>"; };
 		5EB3611823C255E200D13482 /* electricWithMoney.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = electricWithMoney.png; path = images/electricWithMoney.png; sourceTree = "<group>"; };
 		5EB3611923C255E200D13482 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = images/1.png; sourceTree = "<group>"; };
 		5EB3611A23C255E200D13482 /* explosion4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = explosion4.png; path = images/explosion4.png; sourceTree = "<group>"; };
-		5EB3611B23C255E200D13482 /* iphone-7-landscape.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "iphone-7-landscape.jpg"; path = "images/iphone-7-landscape.jpg"; sourceTree = "<group>"; };
 		5EB3611C23C255E200D13482 /* strongElectricShooter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = strongElectricShooter.png; path = images/strongElectricShooter.png; sourceTree = "<group>"; };
 		5EB3611D23C255E200D13482 /* homeButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = homeButton.png; path = images/homeButton.png; sourceTree = "<group>"; };
 		5EB3611E23C255E300D13482 /* playButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = playButton.png; path = images/playButton.png; sourceTree = "<group>"; };
@@ -335,11 +313,9 @@
 		5EB3612023C255E300D13482 /* bullet1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bullet1.png; path = images/bullet1.png; sourceTree = "<group>"; };
 		5EB3612123C255E300D13482 /* redTouchMoveImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redTouchMoveImage.png; path = images/redTouchMoveImage.png; sourceTree = "<group>"; };
 		5EB3612223C255E300D13482 /* gridCells.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gridCells.png; path = images/gridCells.png; sourceTree = "<group>"; };
-		5EB3612323C255E300D13482 /* iphone-7-menu-env.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "iphone-7-menu-env.jpg"; path = "images/iphone-7-menu-env.jpg"; sourceTree = "<group>"; };
 		5EB3612423C255E300D13482 /* menuAnimationImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menuAnimationImage.png; path = images/menuAnimationImage.png; sourceTree = "<group>"; };
 		5EB3612523C255E300D13482 /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 9.png; path = images/9.png; sourceTree = "<group>"; };
 		5EB3612623C255E400D13482 /* runFastButton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = runFastButton2.png; path = images/runFastButton2.png; sourceTree = "<group>"; };
-		5EB3612723C255E400D13482 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "images/Default-Landscape~ipad.png"; sourceTree = "<group>"; };
 		5EB3612823C255E400D13482 /* musicImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = musicImage.png; path = images/musicImage.png; sourceTree = "<group>"; };
 		5EB3612923C255E400D13482 /* bullet2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bullet2.png; path = images/bullet2.png; sourceTree = "<group>"; };
 		5EB3612A23C255E400D13482 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = images/2.png; sourceTree = "<group>"; };
@@ -348,7 +324,6 @@
 		5EB3612D23C255E400D13482 /* wideLine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wideLine.png; path = images/wideLine.png; sourceTree = "<group>"; };
 		5EB3612E23C255E500D13482 /* bomb2Valid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bomb2Valid.png; path = images/bomb2Valid.png; sourceTree = "<group>"; };
 		5EB3612F23C255E500D13482 /* exitShape0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = exitShape0.png; path = images/exitShape0.png; sourceTree = "<group>"; };
-		5EB3613023C255E500D13482 /* iphone-SE-landscape.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "iphone-SE-landscape.jpg"; path = "images/iphone-SE-landscape.jpg"; sourceTree = "<group>"; };
 		5EB3613123C255E500D13482 /* manShooterWithMoney.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = manShooterWithMoney.png; path = images/manShooterWithMoney.png; sourceTree = "<group>"; };
 		5EB3613223C255E500D13482 /* bombsButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bombsButton.png; path = images/bombsButton.png; sourceTree = "<group>"; };
 		5EB3613323C255E500D13482 /* dollar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = dollar.png; path = images/dollar.png; sourceTree = "<group>"; };
@@ -364,7 +339,6 @@
 		5EB3613D23C255E600D13482 /* buyFullVersionButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buyFullVersionButton.png; path = images/buyFullVersionButton.png; sourceTree = "<group>"; };
 		5EB3613E23C255E700D13482 /* rateButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rateButton.png; path = images/rateButton.png; sourceTree = "<group>"; };
 		5EB3613F23C255E700D13482 /* electricShooter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = electricShooter.png; path = images/electricShooter.png; sourceTree = "<group>"; };
-		5EB3614023C255E700D13482 /* iphone-SE-game-bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "iphone-SE-game-bg.jpg"; path = "images/iphone-SE-game-bg.jpg"; sourceTree = "<group>"; };
 		5EB3614123C255E700D13482 /* bomb4Valid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bomb4Valid.png; path = images/bomb4Valid.png; sourceTree = "<group>"; };
 		5EB3614223C255E700D13482 /* starShooterGun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = starShooterGun.png; path = images/starShooterGun.png; sourceTree = "<group>"; };
 		5EB3614323C255E700D13482 /* bomb3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bomb3.png; path = images/bomb3.png; sourceTree = "<group>"; };
@@ -379,7 +353,6 @@
 		5EB3614C23C255E800D13482 /* bomb4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bomb4.png; path = images/bomb4.png; sourceTree = "<group>"; };
 		5EB3614D23C255E800D13482 /* exitShape3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = exitShape3.png; path = images/exitShape3.png; sourceTree = "<group>"; };
 		5EB3614E23C255E900D13482 /* bomb1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bomb1.png; path = images/bomb1.png; sourceTree = "<group>"; };
-		5EB3614F23C255E900D13482 /* iphone-4s-game-bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "iphone-4s-game-bg.jpg"; path = "images/iphone-4s-game-bg.jpg"; sourceTree = "<group>"; };
 		5EB3615023C255E900D13482 /* explosion2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = explosion2.png; path = images/explosion2.png; sourceTree = "<group>"; };
 		5EB3615123C255E900D13482 /* handNoHand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = handNoHand.png; path = images/handNoHand.png; sourceTree = "<group>"; };
 		5EB3615223C255E900D13482 /* entranceShape0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = entranceShape0.png; path = images/entranceShape0.png; sourceTree = "<group>"; };
@@ -387,12 +360,10 @@
 		5EB3615423C255E900D13482 /* apache2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = apache2.png; path = images/apache2.png; sourceTree = "<group>"; };
 		5EB3615523C255E900D13482 /* restoreButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = restoreButton.png; path = images/restoreButton.png; sourceTree = "<group>"; };
 		5EB3615623C255EA00D13482 /* bomb4Invalid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bomb4Invalid.png; path = images/bomb4Invalid.png; sourceTree = "<group>"; };
-		5EB3615723C255EA00D13482 /* iphone-SE-menu-env.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "iphone-SE-menu-env.jpg"; path = "images/iphone-SE-menu-env.jpg"; sourceTree = "<group>"; };
 		5EB3615823C255EA00D13482 /* aboutText.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aboutText.png; path = images/aboutText.png; sourceTree = "<group>"; };
 		5EB3615923C255EA00D13482 /* optionsButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = optionsButton.png; path = images/optionsButton.png; sourceTree = "<group>"; };
 		5EB3615A23C255EA00D13482 /* starWithMoneyBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = starWithMoneyBlack.png; path = images/starWithMoneyBlack.png; sourceTree = "<group>"; };
 		5EB3615B23C255EB00D13482 /* backButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backButton.png; path = images/backButton.png; sourceTree = "<group>"; };
-		5EB3615C23C255EB00D13482 /* iphone-7-plus-game-bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "iphone-7-plus-game-bg.jpg"; path = "images/iphone-7-plus-game-bg.jpg"; sourceTree = "<group>"; };
 		5EB3615D23C255EB00D13482 /* defeatedImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = defeatedImage.png; path = images/defeatedImage.png; sourceTree = "<group>"; };
 		5EB3615E23C255EB00D13482 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = star.png; path = images/star.png; sourceTree = "<group>"; };
 		5EB3615F23C255EB00D13482 /* singleArmShooterBase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = singleArmShooterBase.png; path = images/singleArmShooterBase.png; sourceTree = "<group>"; };
@@ -414,14 +385,11 @@
 		5EB3616F23C255ED00D13482 /* singleArmShooter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = singleArmShooter.png; path = images/singleArmShooter.png; sourceTree = "<group>"; };
 		5EB3617023C255ED00D13482 /* newHummer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = newHummer.png; path = images/newHummer.png; sourceTree = "<group>"; };
 		5EB3617123C255EE00D13482 /* singleArmWithMoney.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = singleArmWithMoney.png; path = images/singleArmWithMoney.png; sourceTree = "<group>"; };
-		5EB3617223C255EE00D13482 /* ipad-menu-env.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "ipad-menu-env.jpg"; path = "images/ipad-menu-env.jpg"; sourceTree = "<group>"; };
 		5EB3617323C255EE00D13482 /* singleArmShooterGun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = singleArmShooterGun.png; path = images/singleArmShooterGun.png; sourceTree = "<group>"; };
 		5EB3617423C255EE00D13482 /* okButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = okButton.png; path = images/okButton.png; sourceTree = "<group>"; };
-		5EB3617523C255EE00D13482 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "images/Default@2x.png"; sourceTree = "<group>"; };
 		5EB3617623C255EE00D13482 /* soundImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = soundImage.png; path = images/soundImage.png; sourceTree = "<group>"; };
 		5EB3617723C255EE00D13482 /* tank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tank.png; path = images/tank.png; sourceTree = "<group>"; };
 		5EB3617823C255EE00D13482 /* life.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = life.png; path = images/life.png; sourceTree = "<group>"; };
-		5EB3617923C255EF00D13482 /* iphone-7-game-bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "iphone-7-game-bg.jpg"; path = "images/iphone-7-game-bg.jpg"; sourceTree = "<group>"; };
 		5EB3617A23C255EF00D13482 /* rangeCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rangeCircle.png; path = images/rangeCircle.png; sourceTree = "<group>"; };
 		5EB3617B23C255EF00D13482 /* bomb2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bomb2.png; path = images/bomb2.png; sourceTree = "<group>"; };
 		5EB3617C23C255EF00D13482 /* electricWithMoneyBlack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = electricWithMoneyBlack.png; path = images/electricWithMoneyBlack.png; sourceTree = "<group>"; };
@@ -546,8 +514,6 @@
 				5EB3610F23C255E100D13482 /* bullet3.png */,
 				5EB3613D23C255E600D13482 /* buyFullVersionButton.png */,
 				5EB3614423C255E700D13482 /* confirmationImage.png */,
-				5EB3612723C255E400D13482 /* Default-Landscape~ipad.png */,
-				5EB3617523C255EE00D13482 /* Default@2x.png */,
 				5EB3615D23C255EB00D13482 /* defeatedImage.png */,
 				5EB3614623C255E800D13482 /* difficultyImage.png */,
 				5EB3613323C255E500D13482 /* dollar.png */,
@@ -577,20 +543,6 @@
 				5EB3616923C255ED00D13482 /* handTouch.png */,
 				5EB3611D23C255E200D13482 /* homeButton.png */,
 				5EB3616623C255EC00D13482 /* ipad-game-bg.jpg */,
-				5EB3610223C255DF00D13482 /* ipad-landscape.jpg */,
-				5EB3617223C255EE00D13482 /* ipad-menu-env.jpg */,
-				5EB3614F23C255E900D13482 /* iphone-4s-game-bg.jpg */,
-				5EB360FB23C255DF00D13482 /* iphone-4s-landscape.jpg */,
-				5EB3611723C255E200D13482 /* iphone-4s-menu-env.jpg */,
-				5EB3617923C255EF00D13482 /* iphone-7-game-bg.jpg */,
-				5EB3611B23C255E200D13482 /* iphone-7-landscape.jpg */,
-				5EB3612323C255E300D13482 /* iphone-7-menu-env.jpg */,
-				5EB3615C23C255EB00D13482 /* iphone-7-plus-game-bg.jpg */,
-				5EB3610623C255E000D13482 /* iphone-7-plus-landscape.jpg */,
-				5EB3610423C255DF00D13482 /* iphone-7-plus-menu-env.jpg */,
-				5EB3614023C255E700D13482 /* iphone-SE-game-bg.jpg */,
-				5EB3613023C255E500D13482 /* iphone-SE-landscape.jpg */,
-				5EB3615723C255EA00D13482 /* iphone-SE-menu-env.jpg */,
 				5EB3614B23C255E800D13482 /* largeIconFree 2.png */,
 				5EB3617F23C255EF00D13482 /* laterButton.png */,
 				5EB3611F23C255E300D13482 /* levelImage.png */,
@@ -648,7 +600,6 @@
 				5EB3616423C255EC00D13482 /* victoryImage.png */,
 				5EB3614A23C255E800D13482 /* waveNumberSeparator.png */,
 				5EB3612D23C255E400D13482 /* wideLine.png */,
-				5EB0D3F21DEB341600B6FF22 /* GameBg */,
 				5EB0D3E71DEB31D200B6FF22 /* MenuEnv */,
 				5EB0D3DC1DEB318F00B6FF22 /* MainMenu */,
 			);
@@ -835,13 +786,6 @@
 			name = MenuEnv;
 			sourceTree = "<group>";
 		};
-		5EB0D3F21DEB341600B6FF22 /* GameBg */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = GameBg;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -925,7 +869,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EB361D823C255F000D13482 /* iphone-4s-game-bg.jpg in Resources */,
 				5EB361F823C255F000D13482 /* singleArmShooter.png in Resources */,
 				5EB361BD23C255F000D13482 /* 0.png in Resources */,
 				5EB3619123C255F000D13482 /* 8.png in Resources */,
@@ -942,7 +885,6 @@
 				5EB3621E23C2568F00D13482 /* buttonSound.caf in Resources */,
 				5EB361DF23C255F000D13482 /* bomb4Invalid.png in Resources */,
 				5EB361C023C255F000D13482 /* strongElectricWithMoneyBlack.png in Resources */,
-				5EB361E023C255F000D13482 /* iphone-SE-menu-env.jpg in Resources */,
 				5E96F4311DEA296A00B761A6 /* Images.xcassets in Resources */,
 				5EB3618A23C255F000D13482 /* entranceShape1.png in Resources */,
 				5EB3625823C520E800D13482 /* bg-plane.png in Resources */,
@@ -960,7 +902,6 @@
 				5EB3622423C2568F00D13482 /* apacheSound.caf in Resources */,
 				5EB3621C23C2568F00D13482 /* putSound.caf in Resources */,
 				5EB361C623C255F000D13482 /* buyFullVersionButton.png in Resources */,
-				5EB3618D23C255F000D13482 /* iphone-7-plus-menu-env.jpg in Resources */,
 				5EB361ED23C255F000D13482 /* victoryImage.png in Resources */,
 				5EB361DD23C255F000D13482 /* apache2.png in Resources */,
 				5EB361AE23C255F000D13482 /* 9.png in Resources */,
@@ -976,10 +917,7 @@
 				5EB361C423C255F000D13482 /* aboutButton.png in Resources */,
 				5EB3618723C255F000D13482 /* manShooterBase.png in Resources */,
 				5EB3625623C520E800D13482 /* bg-starShooter.png in Resources */,
-				5EB3618F23C255F000D13482 /* iphone-7-plus-landscape.jpg in Resources */,
-				5EB361B923C255F000D13482 /* iphone-SE-landscape.jpg in Resources */,
 				5EB361CC23C255F000D13482 /* bomb3.png in Resources */,
-				5EB361C923C255F000D13482 /* iphone-SE-game-bg.jpg in Resources */,
 				5EB361AD23C255F000D13482 /* menuAnimationImage.png in Resources */,
 				5EB361DE23C255F000D13482 /* restoreButton.png in Resources */,
 				5EB361BA23C255F000D13482 /* manShooterWithMoney.png in Resources */,
@@ -1005,15 +943,12 @@
 				5EB361B423C255F000D13482 /* resetButton.png in Resources */,
 				5EB361B223C255F000D13482 /* bullet2.png in Resources */,
 				5EB361AF23C255F000D13482 /* runFastButton2.png in Resources */,
-				5EB361FB23C255F000D13482 /* ipad-menu-env.jpg in Resources */,
 				5EB361A623C255F000D13482 /* homeButton.png in Resources */,
 				5EB3622D23C4EC4300D13482 /* Main.storyboard in Resources */,
 				5EB361A223C255F000D13482 /* 1.png in Resources */,
 				5EB361DA23C255F000D13482 /* handNoHand.png in Resources */,
-				5EB361E523C255F000D13482 /* iphone-7-plus-game-bg.jpg in Resources */,
 				5EB361D223C255F000D13482 /* exitShape1.png in Resources */,
 				5EB361D123C255F000D13482 /* bombExplosion4.png in Resources */,
-				5EB361A023C255F000D13482 /* iphone-4s-menu-env.jpg in Resources */,
 				5EB361CA23C255F000D13482 /* bomb4Valid.png in Resources */,
 				5EB361A823C255F000D13482 /* levelImage.png in Resources */,
 				5EB3618523C255F000D13482 /* plane.png in Resources */,
@@ -1034,8 +969,6 @@
 				5EB361E123C255F000D13482 /* aboutText.png in Resources */,
 				5EB361D323C255F000D13482 /* waveNumberSeparator.png in Resources */,
 				5EB361A123C255F000D13482 /* electricWithMoney.png in Resources */,
-				5EB3620223C255F000D13482 /* iphone-7-game-bg.jpg in Resources */,
-				5EB361AC23C255F000D13482 /* iphone-7-menu-env.jpg in Resources */,
 				5EB361B323C255F000D13482 /* 2.png in Resources */,
 				5EB3619A23C255F000D13482 /* explosion1.png in Resources */,
 				5EB3619623C255F000D13482 /* bomb2Invalid.png in Resources */,
@@ -1056,8 +989,6 @@
 				5EB361CE23C255F000D13482 /* starWithMoney.png in Resources */,
 				5EB361B123C255F000D13482 /* musicImage.png in Resources */,
 				5EB361D523C255F000D13482 /* bomb4.png in Resources */,
-				5EB361A423C255F000D13482 /* iphone-7-landscape.jpg in Resources */,
-				5EB3618423C255F000D13482 /* iphone-4s-landscape.jpg in Resources */,
 				5EB361C523C255F000D13482 /* runWaveButton.png in Resources */,
 				5EB3625423C520E800D13482 /* bg-singleArmShooter.png in Resources */,
 				5EB361D423C255F000D13482 /* largeIconFree 2.png in Resources */,
@@ -1075,14 +1006,11 @@
 				5EB3619523C255F000D13482 /* bomb3Valid.png in Resources */,
 				5EB361F223C255F000D13482 /* handTouch.png in Resources */,
 				5EB3625A23C520E800D13482 /* bg-electric.png in Resources */,
-				5EB361FE23C255F000D13482 /* Default@2x.png in Resources */,
 				5EB3622223C2568F00D13482 /* bullet1.caf in Resources */,
-				5EB361B023C255F000D13482 /* Default-Landscape~ipad.png in Resources */,
 				5EB3622B23C4EB9E00D13482 /* LaunchScreen.storyboard in Resources */,
 				5EB361EA23C255F000D13482 /* noButton.png in Resources */,
 				5EB361B523C255F000D13482 /* soundOn.png in Resources */,
 				5EB3625523C520E800D13482 /* bg-strongElectric.png in Resources */,
-				5EB3618B23C255F000D13482 /* ipad-landscape.jpg in Resources */,
 				5EB361B723C255F000D13482 /* bomb2Valid.png in Resources */,
 				5EB361A523C255F000D13482 /* strongElectricShooter.png in Resources */,
 				5EB361F923C255F000D13482 /* newHummer.png in Resources */,
