@@ -28,6 +28,9 @@
     [soundObject playMySoundFile:@"buttonSound"];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://appstore.com/armydefence"]];
 }
+- (IBAction)MoreAppsButton:(UIButton *)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://appstore.com/amrlabib"]];
+}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {

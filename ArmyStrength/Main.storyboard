@@ -121,21 +121,21 @@
                                     <action selector="RateButton:" destination="mZI-bN-0Af" eventType="touchUpInside" id="c6r-Ma-MDt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y92-Yy-Ftc">
-                                <rect key="frame" x="130" y="934" width="70" height="70"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgg-GB-nUL">
+                                <rect key="frame" x="1276" y="934" width="70" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="Q0V-jG-m94">
+                                    <constraint firstAttribute="height" constant="70" id="2O0-ZJ-Ydt">
                                         <variation key="heightClass=compact-widthClass=compact" constant="35"/>
                                         <variation key="heightClass=compact-widthClass=regular" constant="35"/>
                                     </constraint>
-                                    <constraint firstAttribute="width" constant="70" id="x0e-zQ-tB1">
+                                    <constraint firstAttribute="width" constant="70" id="jhI-fy-LEs">
                                         <variation key="heightClass=compact-widthClass=compact" constant="35"/>
                                         <variation key="heightClass=compact-widthClass=regular" constant="35"/>
                                     </constraint>
                                 </constraints>
-                                <state key="normal" image="buyFullVersionButton.png"/>
+                                <state key="normal" image="moreAppsButton.png"/>
                                 <connections>
-                                    <action selector="BuyFullAppButton:" destination="mZI-bN-0Af" eventType="touchUpInside" id="fGu-DZ-j3o"/>
+                                    <action selector="MoreAppsButton:" destination="mZI-bN-0Af" eventType="touchUpInside" id="dYR-k1-Taa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -145,20 +145,20 @@
                                 <variation key="heightClass=compact-widthClass=compact" constant="10"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="10"/>
                             </constraint>
-                            <constraint firstItem="BRd-VO-TkA" firstAttribute="bottom" secondItem="Y92-Yy-Ftc" secondAttribute="bottom" constant="20" id="Ox5-jG-l4h">
-                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
-                                <variation key="heightClass=compact-widthClass=regular" constant="10"/>
-                            </constraint>
                             <constraint firstItem="Ku4-Df-ucv" firstAttribute="leading" secondItem="BRd-VO-TkA" secondAttribute="leading" constant="20" id="RnB-lI-NcM">
                                 <variation key="heightClass=compact-widthClass=compact" constant="10"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="10"/>
                             </constraint>
-                            <constraint firstItem="13W-Yx-x1a" firstAttribute="centerX" secondItem="9YU-QJ-vFu" secondAttribute="centerX" id="fio-6c-SQI"/>
-                            <constraint firstItem="Y92-Yy-Ftc" firstAttribute="leading" secondItem="Ku4-Df-ucv" secondAttribute="trailing" constant="40" id="giM-N3-3zl">
+                            <constraint firstItem="BRd-VO-TkA" firstAttribute="bottom" secondItem="zgg-GB-nUL" secondAttribute="bottom" constant="20" id="WR4-bO-q8I">
                                 <variation key="heightClass=compact-widthClass=compact" constant="10"/>
                                 <variation key="heightClass=compact-widthClass=regular" constant="10"/>
                             </constraint>
+                            <constraint firstItem="13W-Yx-x1a" firstAttribute="centerX" secondItem="9YU-QJ-vFu" secondAttribute="centerX" id="fio-6c-SQI"/>
                             <constraint firstItem="13W-Yx-x1a" firstAttribute="centerY" secondItem="9YU-QJ-vFu" secondAttribute="centerY" id="kJD-fS-7yS"/>
+                            <constraint firstItem="BRd-VO-TkA" firstAttribute="trailing" secondItem="zgg-GB-nUL" secondAttribute="trailing" constant="20" id="nHl-Pa-kfY">
+                                <variation key="heightClass=compact-widthClass=compact" constant="10"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="10"/>
+                            </constraint>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BRd-VO-TkA"/>
                     </view>
@@ -382,9 +382,9 @@
     <resources>
         <image name="aboutButton.png" width="200" height="127"/>
         <image name="aboutText.png" width="900" height="900"/>
-        <image name="buyFullVersionButton.png" width="150" height="150"/>
         <image name="header-text.png" width="417" height="188"/>
         <image name="homeButton.png" width="150" height="150"/>
+        <image name="moreAppsButton.png" width="150" height="150"/>
         <image name="optionsButton.png" width="200" height="127"/>
         <image name="playButton.png" width="200" height="128"/>
         <image name="rateButton.png" width="150" height="150"/>
