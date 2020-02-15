@@ -24,6 +24,7 @@
 #import "BombView.h"
 #import "tutorialClass.h"
 #import "ViewsUtil.h"
+#import <StoreKit/StoreKit.h>
 
 
 @protocol gameObjectDelegateFunctions <NSObject>

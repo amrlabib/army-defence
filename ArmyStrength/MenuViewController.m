@@ -17,8 +17,12 @@
 
 - (IBAction)RateButton:(id)sender {
     [soundObject playMySoundFile:@"buttonSound"];
+    if (@available(iOS 10.3, *)) {
+        [SKStoreReviewController requestReview];
+    } else {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://appstore.com/armydefencefree"]];
+    }
     [saveTextObject updateArmyRated:true];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://appstore.com/armydefencefree"]];
 }
 - (IBAction)BuyFullAppButton:(id)sender {
     [soundObject playMySoundFile:@"buttonSound"];

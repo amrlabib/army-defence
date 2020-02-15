@@ -442,9 +442,16 @@
     
 }
 
-
-
-
+-(void) rateApp
+{
+    if (@available(iOS 10.3, *)) {
+        [SKStoreReviewController requestReview];
+    } else {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://appstore.com/armydefencefree"]];
+    }
+    
+    [savedTextRef updateArmyRated:true];
+}
 
 -(void) ratingFunction
 {
@@ -460,27 +467,10 @@
             pausedDueToPopUpMessage = true;
         }
         
-        
-        
-        popUpMessages *vMessage = [[popUpMessages alloc] init:viewReference :currentWindowBoundsFull :@"rateUsImage.png" : -3 : soundEffectsObject];
-        [vMessage setDelegate:self];
-        [vMessage addMessage];
+        [self rateApp];
         popUpMessageActivated= true;
     }
 }
--(void) handleGameRateSubmitted : (bool) value
-{
-    if(value)
-    {
-        [savedTextRef updateArmyRated:true];
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://appstore.com/armydefencefree"]];
-    }
-    else
-    {
-        rateLater = true;
-    }
-}
-
 
 
 -(void) initGameTimer
