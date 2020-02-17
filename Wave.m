@@ -110,7 +110,7 @@
 }
 
 
--(bool) moveTheTank : (int) i  : (int) rightEnd
+-(bool) moveTheTank : (int) i  : (int) rightEnd : (int) boardXStart
 {
     int tankWidth = [tanksArray[i] tankSize].width ;
     int tankHeight = [tanksArray[i] tankSize].height ;
@@ -155,11 +155,11 @@
             [tanksArray[i] moveTank:-step :0];
         }
         int r1 = (int)((int)([[tanksArray[i]  objectShape ]  yPosition  ] ) / (int)boardBlockSize.height);
-        int c1 = (int)((int)([[tanksArray[i]  objectShape ]  xPosition  ] ) / (int)boardBlockSize.width);
+        int c1 = (int)((int)([[tanksArray[i]  objectShape ]  xPosition  ] - boardXStart) / (int)boardBlockSize.width);
 
         
         int r2 = (int)((int)([[tanksArray[i]  objectShape ]  yPosition  ] + tankHeight ) / (int)boardBlockSize.height);
-        int c2 = (int)((int)([[tanksArray[i]  objectShape ]  xPosition  ] + tankWidth ) / (int)boardBlockSize.width);
+        int c2 = (int)((int)([[tanksArray[i]  objectShape ]  xPosition  ] - boardXStart + tankWidth ) / (int)boardBlockSize.width);
         
 
         

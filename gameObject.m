@@ -805,7 +805,7 @@
     
     int rightEnd = boardObject.xStart +  (int)boardObject.cols * (int)boardObject.blockSize.width;
     
-    for(int t=(int)([wavesArray[activeWaveNumber] tanksArray].count)-1 ;t>=0 && t< [wavesArray[activeWaveNumber] tanksArray].count && [wavesArray[activeWaveNumber] moveTheTank:t : rightEnd]  ; t--)
+    for(int t=(int)([wavesArray[activeWaveNumber] tanksArray].count)-1 ;t>=0 && t< [wavesArray[activeWaveNumber] tanksArray].count && [wavesArray[activeWaveNumber] moveTheTank:t : rightEnd : boardObject.xStart]  ; t--)
     {
         Tank *currentTank = [wavesArray[activeWaveNumber] tanksArray][t];
 

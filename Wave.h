@@ -36,5 +36,5 @@
 -(void) addTanksToWave : (CGSize) blockSize : (double) waveNumber;
 //-(void) setInitialPath : (NSMutableArray*) path;
 //-(void) moveTanks : (int) screenWidth;
--(bool) moveTheTank : (int) i : (int) rightEnd ;
+-(bool) moveTheTank : (int) i : (int) rightEnd: (int) xStart ;
 @end
