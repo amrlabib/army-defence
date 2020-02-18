@@ -252,7 +252,7 @@
 		5E5D836017B157DB00A2FAD3 /* Dijkstra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dijkstra.m; sourceTree = "<group>"; };
 		5E69FB6817C428E90087D9DC /* ImageNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageNumber.h; sourceTree = "<group>"; };
 		5E69FB6917C428E90087D9DC /* ImageNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageNumber.m; sourceTree = "<group>"; };
-		5E82F45517AB0F4E00D87C8C /* Army Defence Free.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Army Defence Free.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E82F45517AB0F4E00D87C8C /* Army Defence Towers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Army Defence Towers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E82F45817AB0F4E00D87C8C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5E82F45A17AB0F4E00D87C8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5E82F45C17AB0F4E00D87C8C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -648,7 +648,7 @@
 		5E82F45617AB0F4E00D87C8C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5E82F45517AB0F4E00D87C8C /* Army Defence Free.app */,
+				5E82F45517AB0F4E00D87C8C /* Army Defence Towers.app */,
 				5E82F47E17AB0F4E00D87C8C /* Army Defence FreeTests.xctest */,
 			);
 			name = Products;
@@ -803,7 +803,7 @@
 			);
 			name = "Army Defence Free";
 			productName = ArmyStrength;
-			productReference = 5E82F45517AB0F4E00D87C8C /* Army Defence Free.app */;
+			productReference = 5E82F45517AB0F4E00D87C8C /* Army Defence Towers.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5E82F47D17AB0F4E00D87C8C /* Army Defence FreeTests */ = {
@@ -1208,7 +1208,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = VJ9WHW756Y;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ArmyStrength/Army Defence Free-Prefix.pch";
@@ -1216,7 +1216,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "AmrHamdyLabib.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "Army Defence Free";
+				PRODUCT_NAME = "Army Defence Towers";
 				PROVISIONING_PROFILE = "9e40e02b-c06d-4276-a753-2412979441dd";
 				PROVISIONING_PROFILE_SPECIFIER = "Army Defence Development";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1231,7 +1231,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Amr Labib (VJ9WHW756Y)";
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = VJ9WHW756Y;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ArmyStrength/Army Defence Free-Prefix.pch";
@@ -1239,7 +1239,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "AmrHamdyLabib.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "Army Defence Free";
+				PRODUCT_NAME = "Army Defence Towers";
 				PROVISIONING_PROFILE = "6ed77d41-ebaa-40e7-83cc-b3ff691c645d";
 				PROVISIONING_PROFILE_SPECIFIER = "Army Defence Distribution";
 				TARGETED_DEVICE_FAMILY = "1,2";
